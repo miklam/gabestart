@@ -1,11 +1,15 @@
-# GetStarted - A Simple Responsive Startpage
+# GABEstart - A Simple Responsive Startpage
 
-![Gif](asset/getstarted.gif)
+![Gif](asset/gabestart-demo.gif)
 
-Getstarted is a simple, clean startpage which can be used on any device like phone, pad, desktop, etc.
+**GABEstart** is a simple, clean startpage which can be used on any device like phone, pad, desktop, etc.
 
-It has dark and light mode. And website links are customizable.
+It has dark ([Dracula](https://draculatheme.com/contribute)-est theme) and light mode. And website links are customizable.
 
 ## Customizations
 
 See `config.js` file for customization.
+
+## Credits
+
+Thanks to [MrAlpha786](https://github.com/MrAlpha786) for the original [GetStarted](https://github.com/MrAlpha786/getstarted) startpage.
