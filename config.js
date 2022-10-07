@@ -22,10 +22,17 @@ var cards = [
 	{
 		name: "News",
 		bookmarks: {
+			"Ars Technica": "https://arstechnica.com",
+			"BBC News": "https://bbc.com",
 			"Digg": "https://digg.com",
+			"Forbes": "https://forbes.com",
+			"Mashable": "https://mashable.com",
+			"NPR": "https://npr.org",
 			"Quora": "https://quora.com",
 			"Reddit": "https://reddit.com",
-			"Stack Exchange": "https://stackexchange.com"
+			"Stack Exchange": "https://stackexchange.com",
+			"TNW": "https://thenextweb.com",
+			"The Verge": "https://theverge.com"
 		}
 	},
 	{
