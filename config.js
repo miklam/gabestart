@@ -57,7 +57,8 @@ var cards = [
 			"Runtime": "https://runtime.tv",
 			"Spotify": "https://open.spotify.com",
 			"Trakt.tv": "https://trakt.tv",
-			"YouTube": "https://youtube.com"
+			"YouTube": "https://youtube.com",
+			"YouTube Music": "https://music.youtube.com"
 		}
 	}
 ]
