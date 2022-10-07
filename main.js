@@ -52,7 +52,7 @@ function clearField() {
 function search() {
     if (searchField.value != "") {
         var val = searchField.value;
-        window.open(searchUrl + val, "_self");
+        window.open(searchUrl + val, "_blank");
     }
     clearField();
 }
@@ -106,6 +106,7 @@ for (let i=0; i<tabs.length; i++){
         var a_link = document.createElement('a');
         a_link.innerHTML = sites[j];
         a_link.href = cards[i].bookmarks[sites[j]];
+        a_link.target = '_blank';
 
         contents[i].appendChild(a_link);
     }

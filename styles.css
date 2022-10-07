@@ -7,25 +7,25 @@
 /* TODO: Create Custom Theme Template to be imported */
 /* Colors and other var*/
 :root {
-  --bg: #fff;
-  --fg: #111;
-  --secondaryBg: #f1f1f1;
-  --invert: 0;
+	--bg: #f8f8f2;
+	--fg: #282a36;
+	--secondaryBg: #f1f1f1;
+	--invert: 0;
 
-  --scrollbar: #8888;
-  --red: #cc241d;
-  --green: #98971a;
-  --yellow: #d79921;
-  --blue: #458488;
-  --fontFamily: 'Roboto Mono', monospace;
+	--scrollbar: #6272a4;
+	--red: #ff5555;
+	--green: #50fa7b;
+	--yellow: #f1fa8c;
+	--blue: #BD93F9;
+	--fontFamily: 'Roboto Mono', monospace;
 }
 
 .dark-mode {
-  --bg: #111;
-  --fg: #fff;
-  --secondaryBg: #282828;
-  --invert: 1;
-}
+		--bg: #282a36;
+		--fg: #f8f8f2;
+		--secondaryBg: #44475a;
+		--invert: 1;
+	}
 
 body {
 	background-color: var(--bg);
@@ -39,42 +39,42 @@ body {
 	text-decoration: none;
 	border: 0;
 	outline-style: none;
-    -webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
 	font-family: var(--fontFamily);
-    -ms-overflow-style: none;
-    scrollbar-width: thin;
-    scrollbar-color: #00000000 #00000000;
+	-ms-overflow-style: none;
+	scrollbar-width: thin;
+	scrollbar-color: #00000000 #00000000;
 }
 
 ::-webkit-scrollbar {
-    width: 0.3em;
+	width: 0.3em;
 }
 
 ::-webkit-scrollbar-track {
-    background: #00000000;
-    margin-bottom: 0.75em;
+	background: #00000000;
+	margin-bottom: 0.75em;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #00000000;
-    border-radius: 1em;
+	background-color: #00000000;
+	border-radius: 1em;
 }
 
 :hover,
 .visible-scrollbar {
-    scrollbar-color: var(--scrollbar) #00000000;
+	scrollbar-color: var(--scrollbar) #00000000;
 }
 
 :hover::-webkit-scrollbar-thumb,
 .visible-scrollbar::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar);
+	background-color: var(--scrollbar);
 }
 
 .container {
 	width: 100%;
 	height: 100vh;
 	margin: auto;
-    padding-top: 15vh;
+	padding-top: 15vh;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -173,15 +173,15 @@ button#clear-field img {
 
 /* Tab Content */
 #content-container {
-    align-items: flex-start;
+	align-items: flex-start;
 	background-color: var(--Bg);
 	border-radius: 0 0 0.75em 0.75em;
 }
 
 .content {
 	display: none;
-    max-height: 35vh;
-    padding-bottom: 0.75em;
+	max-height: 35vh;
+	padding-bottom: 0.75em;
 	background-color: var(--secondaryBg);
 	flex-direction: column;
 	overflow: auto;
@@ -192,7 +192,7 @@ button#clear-field img {
 	display: flex;
 }
 
-.content > a {
+.content>a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -203,7 +203,7 @@ button#clear-field img {
 /* Colors */
 .tab.active[data-tab*="1"],
 .content[data-tab*="1"] a:hover {
-	background-color: var(--red);
+	background-color: var(--blue);
 }
 
 .tab.active[data-tab*="2"],
@@ -218,7 +218,7 @@ button#clear-field img {
 
 .tab.active[data-tab*="4"],
 .content[data-tab*="4"] a:hover {
-	background-color: var(--blue);
+	background-color: var(--red);
 }
 
 /* Screens larger than a average phone */
@@ -228,17 +228,18 @@ button#clear-field img {
 		background-color: transparent;
 	}
 
-	.tab, .tab.active[data-tab^="tab"] {
+	.tab,
+	.tab.active[data-tab^="tab"] {
 		width: 24%;
 		margin: 0 1%;
-		padding:0.5em;
+		padding: 0.5em;
 		font-size: 1.5em;
 		background-color: var(--secondaryBg);
 		border-radius: 0.75rem 0.75rem 0 0;
 	}
 
 	.tab[data-tab*="1"] {
-		color: var(--red);
+		color: var(--blue);
 	}
 
 	.tab[data-tab*="2"] {
@@ -250,17 +251,18 @@ button#clear-field img {
 	}
 
 	.tab[data-tab*="4"] {
-		color: var(--blue);
+		color: var(--red);
 	}
 
-	.content, .content.active {
+	.content,
+	.content.active {
 		margin: 0 1%;
 		width: 24%;
 		display: flex;
 		border-radius: 0 0 0.75rem 0.75rem;
 	}
 
-	.content > a {
+	.content>a {
 		padding: 0.25em;
 	}
 }
@@ -288,5 +290,3 @@ button#clear-field img {
 		width: 60%;
 	}
 }
-
-

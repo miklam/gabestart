@@ -1,50 +1,54 @@
 // Username displayed in greeting.
-var userName = "Faizan";
+var userName = "gabeweb";
 
 // Default Searchengine
 // Available: Google DuckDuckGo Bing Yahoo
-var searchEngine = "Yahoo";
+var searchEngine = "DuckDuckGo";
 
 // Cards
 var cards = [
 	{
-		name: "General",
+		name: "Email",
 		bookmarks: {
-			"google": "aaa",
-			"dirive": "aaa",
-			"maps": "aaa",
-			"photos": "aaa",
-			"mega": "aaa"
+			"Aol Mail": "https://mail.aol.com",
+			"Google Mail": "https://mail.google.com",
+			"OnMail": "https://mail.onmail.com",
+			"Outlook": "https://mail.live.com",
+			"Proton Mail": "https://mail.proton.me",
+			"Yahoo Mail": "https://mail.yahoo.com",
+			"Yandex Mail": "https://mail.yandex.com"
 		}
 	},
 	{
-		name: "Tech",
+		name: "News",
 		bookmarks: {
-			"github": "aaa",
-			"freenode": "aaa",
-			"stackoverflow": "aaa",
-			"github": "aaa",
-			"freenode": "aaa"
-		}
-	},
-	{
-		name: "Work",
-		bookmarks: {
-			"subreddit": "aaa",
-			"youtube": "aaa",
-			"spotify": "aaa",
-			"amazon": "aaa",
-			"dummysite": "aaa"
+			"Digg": "https://digg.com",
+			"Quora": "https://quora.com",
+			"Reddit": "https://reddit.com",
+			"Stack Exchange": "https://stackexchange.com"
 		}
 	},
 	{
 		name: "Social",
 		bookmarks: {
-			"youtube": "https://www.youtube.com",
-			"twitter": "https://twitter.com",
-			"imgur": "https://imgur.com/",
-			"facebook": "https://www.facebook.com",
-			"reddit": "https://www.reddit.com"
+			"Discord": "https://discordapp.com",
+			"Facebook": "https://facebook.com",
+			"Instagram": "https://instagram.com",
+			"Tumblr": "https://tumblr.com",
+			"Twitter": "https://twitter.com",
+			"VK": "https://vk.com"
+		}
+	},
+	{
+		name: "Media",
+		bookmarks: {
+			"Crumchyroll": "https://crunchyroll.com",
+			"Last.fm": "https://last.fm",
+			"Pluto TV": "https://pluto.tv",
+			"Runtime": "https://runtime.tv",
+			"Spotify": "https://open.spotify.com",
+			"Trakt.tv": "https://trakt.tv",
+			"YouTube": "https://youtube.com"
 		}
 	}
 ]
