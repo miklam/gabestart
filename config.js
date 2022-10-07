@@ -24,15 +24,14 @@ var cards = [
 		bookmarks: {
 			"Ars Technica": "https://arstechnica.com",
 			"BBC News": "https://bbc.com",
+			"CNET": "https://cnet.com",
 			"Digg": "https://digg.com",
 			"Forbes": "https://forbes.com",
 			"Mashable": "https://mashable.com",
 			"NPR": "https://npr.org",
-			"Quora": "https://quora.com",
-			"Reddit": "https://reddit.com",
-			"Stack Exchange": "https://stackexchange.com",
 			"TNW": "https://thenextweb.com",
-			"The Verge": "https://theverge.com"
+			"The Verge": "https://theverge.com",
+			"ZDNET": "https://zdnet.com"
 		}
 	},
 	{
@@ -41,6 +40,9 @@ var cards = [
 			"Discord": "https://discordapp.com",
 			"Facebook": "https://facebook.com",
 			"Instagram": "https://instagram.com",
+			"Quora": "https://quora.com",
+			"Reddit": "https://reddit.com",
+			"Stack Exchange": "https://stackexchange.com",
 			"Tumblr": "https://tumblr.com",
 			"Twitter": "https://twitter.com",
 			"VK": "https://vk.com"

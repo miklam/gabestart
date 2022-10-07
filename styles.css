@@ -16,7 +16,10 @@
 	--red: #ff5555;
 	--green: #50fa7b;
 	--yellow: #f1fa8c;
+	--orange: #ffb86c;
 	--blue: #BD93F9;
+	--white: #f8f8f2;
+	--black: #282a36;
 	--fontFamily: 'Roboto Mono', monospace;
 }
 
@@ -79,6 +82,18 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 	flex-direction: column;
+}
+
+.footer {
+	font-size: 90%;
+	margin: 20px auto;
+	text-align: center;
+	bottom: 0px;
+	background-color: var(--bg);
+}
+
+.footer a {
+	text-decoration: underline;
 }
 
 /* Greeting */
@@ -204,21 +219,39 @@ button#clear-field img {
 .tab.active[data-tab*="1"],
 .content[data-tab*="1"] a:hover {
 	background-color: var(--blue);
+	color: var(--black); /* FIX FOR DRACULA-EST THEME */
 }
 
 .tab.active[data-tab*="2"],
 .content[data-tab*="2"] a:hover {
 	background-color: var(--green);
+	color: var(--black); /* FIX FOR DRACULA-EST THEME */
 }
 
 .tab.active[data-tab*="3"],
 .content[data-tab*="3"] a:hover {
-	background-color: var(--yellow);
+	background-color: var(--orange);
+	color: var(--black); /* FIX FOR DRACULA-EST THEME */
 }
 
 .tab.active[data-tab*="4"],
 .content[data-tab*="4"] a:hover {
 	background-color: var(--red);
+	color: var(--white); /* FIX FOR DRACULA-EST THEME */
+}
+
+/* FIX FOR DRACULA-EST THEME */
+
+.tab.active[data-tab*="1"] a:hover {
+	color: var(--black);
+}
+
+.tab.active[data-tab*="2"] a:hover {
+	color: var(--black);
+}
+
+.tab.active[data-tab*="3"] a:hover {
+	color: var(--black);
 }
 
 /* Screens larger than a average phone */
@@ -239,19 +272,19 @@ button#clear-field img {
 	}
 
 	.tab[data-tab*="1"] {
-		color: var(--blue);
+		color: var(--blue) !important; /* FIX FOR DRACULA-EST THEME */
 	}
 
 	.tab[data-tab*="2"] {
-		color: var(--green);
+		color: var(--green) !important; /* FIX FOR DRACULA-EST THEME */
 	}
 
 	.tab[data-tab*="3"] {
-		color: var(--yellow);
+		color: var(--orange) !important; /* FIX FOR DRACULA-EST THEME */
 	}
 
 	.tab[data-tab*="4"] {
-		color: var(--red);
+		color: var(--red) !important; /* FIX FOR DRACULA-EST THEME */
 	}
 
 	.content,
