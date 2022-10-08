@@ -21,13 +21,20 @@
 	--white: #f8f8f2;
 	--black: #282a36;
 	--fontFamily: 'Roboto Mono', monospace;
+
+	--usernameFg: #50fa7b; /* CUSTOM USERNAME COLORS */
+	--usernameBg: #282a36; /* CUSTOM USERNAME COLORS */
 }
 
 .dark-mode {
 		--bg: #282a36;
 		--fg: #f8f8f2;
 		--secondaryBg: #44475a;
+		--black: #282a36;
 		--invert: 1;
+
+		--usernameFg: #282a36;
+		--usernameBg: #50fa7b; /* CUSTOM USERNAME COLORS */
 	}
 
 body {
@@ -98,8 +105,8 @@ body {
 /* Greeting */
 #username {
 	padding: 0 0.5em;
-	color: var(--bg);
-	background-color: var(--fg);
+	color: var(--usernameFg);
+	background-color: var(--usernameBg);
 	border-radius: 2em;
 	cursor: pointer;
 }
