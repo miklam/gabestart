@@ -407,9 +407,5 @@ div#nowPlaying-container {
 
         .playing-not {
             text-transform: lowercase !important;
-            font-size: 150%;
             font-style: italic;
-            width: 100%;
-            vertical-align: middle;
-            padding-top: 18px;
         }
