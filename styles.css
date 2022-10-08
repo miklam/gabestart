@@ -408,4 +408,9 @@ div#nowPlaying-container {
         .playing-not {
             text-transform: lowercase !important;
             font-style: italic;
+			margin: auto;
+			position: relative;
+			max-width: 600px;
+			text-align: center;
+			font-size: 90%;
         }
