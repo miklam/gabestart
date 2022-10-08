@@ -2,7 +2,7 @@
  * Author: MrAlpha786 (github.con/MrAlpha786) */
 
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono');
 
 /* TODO: Create Custom Theme Template to be imported */
 /* Colors and other var*/
@@ -20,7 +20,7 @@
 	--blue: #BD93F9;
 	--white: #f8f8f2;
 	--black: #282a36;
-	--fontFamily: 'Roboto Mono', monospace;
+	--fontFamily: 'IBM Plex Mono', monospace;
 
 	--usernameFg: #50fa7b; /* CUSTOM USERNAME COLORS */
 	--usernameBg: #282a36; /* CUSTOM USERNAME COLORS */
