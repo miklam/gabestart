@@ -14,6 +14,7 @@
     --green: #50fa7b;
     --invert: 0;
     --orange: #ffb86c;
+    --purple: #9580ff;
     --red: #ff5555;
     --scrollbar: #6272a4;
     --secondaryBg: #f1f1f1;
@@ -236,7 +237,7 @@ button#clear-field img {
 /* Colors */
 .tab.active[data-tab*="1"],
 .content[data-tab*="1"] a:hover {
-    background-color: var(--blue);
+    background-color: var(--purple);
     color: var(--black);
 
      /* FIX FOR DRACULA-EST THEME */
@@ -298,7 +299,7 @@ button#clear-field img {
        }
 
     .tab[data-tab*="1"] {
-        color: var(--blue) !important;
+        color: var(--purple) !important;
          /* FIX FOR DRACULA-EST THEME */
        }
 
