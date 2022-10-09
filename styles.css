@@ -417,7 +417,7 @@ span.info-connector {
     font-weight: 300;
 }
 
-.playing-not {
+#playingInfo .playing-not {
     text-transform: lowercase !important;
     font-style: italic;
     margin: auto;
