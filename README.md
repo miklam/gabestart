@@ -24,7 +24,7 @@ You must edit (in `index.html` file) the following strings:
                     refresh: 30,
                 });
                 $("#playingInfo").nowplaying({
-                    apikey: "[YOUR LAST.FM API KEY]", username: "YOUR LAST.FM USERNAME", refresh: 60, notplayingtext: '<p class="playing-not">See recently played tracks on: <a href="https://last.fm/user/[USERNAME]" target="_blank">last.fm/user/[USERNAME]</a></p>'
+                    apikey: "[YOUR LAST.FM API KEY]", username: "[YOUR LAST.FM USERNAME]", refresh: 60, notplayingtext: '<p class="playing-not">See recently played tracks on: <a href="https://last.fm/user/[USERNAME]" target="_blank">last.fm/user/[USERNAME]</a></p>'
                 })
             }); /*]]>*/
   </script>
