@@ -384,22 +384,24 @@ button#clear-field img {
 /* LAST.FM NOW PLAYING WIDGET */
 
 div#nowPlaying-container {
-    transition: width 0.5s;
     transition: all 4s cubic-bezier(1, 0.835, 0, 0.945);
+    width: 90%;
     max-width: 640px;
     overflow: hidden;
-}
-
-#playingInfo .playing-now {
-    text-transform: uppercase;
+    padding: 0;
     position: relative;
-    animation: scroll-left 20s linear infinite;
     display: inline-block;
-    white-space: nowrap;
-    margin-bottom: -50px;
 }
 
-#playingInfo .playing-now:hover, #playingInfo .playing-not:hover {
+#playingInfo p.playing-now {
+    text-transform: uppercase;
+    animation: scroll-left 20s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+	display: inline-block;
+}
+
+#playingInfo p.playing-now:hover, #playingInfo p.playing-not:hover {
     animation-play-state: paused;
 }
 
@@ -417,28 +419,24 @@ span.info-connector {
     font-weight: 300;
 }
 
-#playingInfo .playing-not {
-    text-transform: lowercase !important;
-    font-style: italic;
-    margin: auto;
-    position: relative;
-    max-width: 600px;
-    text-align: center;
-    animation: scroll-left 20s linear infinite;
-    display: inline-block;
-    white-space: nowrap;
+#playingInfo p.playing-not {
+	text-transform: lowercase !important;
+	font-style: italic;
+	animation: scroll-left 20s linear infinite;
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
 }
 
-.playing-not a {
+p.playing-not a {
     text-decoration: underline;
 }
 
 @keyframes scroll-left {
-    0% {
-        transform: translateX(100%);
+    from {
+        transform: translateX(150%);
     }
-
-    100% {
+    to {
         transform: translateX(-100%);
     }
 }
