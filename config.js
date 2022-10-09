@@ -39,7 +39,7 @@ var cards = [
 		bookmarks: {
 			"Discord": "https://discordapp.com",
 			"Facebook": "https://facebook.com",
-			"Instagram": "https://instagram.com",
+			"Instagram": "https://instagram.com/?theme=dark",
 			"Quora": "https://quora.com",
 			"Reddit": "https://reddit.com",
 			"Stack Exchange": "https://stackexchange.com",
