@@ -94,7 +94,6 @@ body {
 
 .footer {
     bottom: 0;
-    color: var(--white);
     font-size: 90%;
     left: 0;
     padding: 20px;
@@ -108,7 +107,6 @@ body {
    }
 
 .footer a {
-    color: var(--white);
     text-decoration: underline;
 	filter: opacity(.5);
    }
@@ -366,14 +364,19 @@ button#clear-field img {
     position: fixed;
     z-index: -1;
    }
+
+#waveform-collage {
+    fill: var(--green);
+}
+
   #waveform-1 {
-    fill: #434c5e;
+    opacity: .1
    }
   #waveform-2 {
-    fill: #3b4252;
+    opacity: .2;
    }
   #waveform-3 {
-    fill: #2e3440;
+    opacity: .3;
    }
 
 /* LAST.FM NOW PLAYING WIDGET */
