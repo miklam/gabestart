@@ -119,10 +119,10 @@ $('#nowPlayingBox').nowplaying({
                     var html = '';
 
                     if (options.icon) {
-                        html = html + '<img src="' + options.icon + '" class="icon" />' + '&nbsp';
+                        html = html + '<p class="playingNow"><img src="' + options.icon + '" class="icon" />' + '&nbsp';
                     }
 
-                    html = html + '<p class="trackInfo"><span class="info-connector">Now Playing:</span><br><span class="track">' + track.name + '<span class="info-connector"> by </span>' + '<span class="artist">' + track.artist['#text'] + '</span>';
+                    html = html + '<span class="titleNowPlaying">Now Playing:<br></span>' + '<p class="playing-now"><span class="playing-info"><span class="track">' + track.name + '</span>' + '<span class="info-connector"> by </span>' + '<span class="artist">' + track.artist['#text'] + '</span></span>';
 
                     if (track.album['#text']) {
                         html = html + '<span class="album"><span class="info-connector"> from </span>' + track.album['#text'] + '</span></p>';
