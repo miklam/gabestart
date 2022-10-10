@@ -22,15 +22,23 @@ var cards = [
 	{
 		name: "News",
 		bookmarks: {
+			"AP News":"https://apnews.com",
 			"Ars Technica": "https://arstechnica.com",
 			"BBC News": "https://bbc.com",
 			"CNET": "https://cnet.com",
 			"Digg": "https://digg.com",
 			"Forbes": "https://forbes.com",
 			"Mashable": "https://mashable.com",
+			"Newsweek":"https://newsweek.com",
+			"NY Times": "https://nytimes.com",
 			"NPR": "https://npr.org",
-			"TNW": "https://thenextweb.com",
+			"Quartz":"https://qz.com",
+			"Reuters":"https://reuters.com",
+			"The Guardian":"https://theguardian.com",
 			"The Verge": "https://theverge.com",
+			"TIME":"https://time.com",
+			"TNW": "https://thenextweb.com",
+			"XDA": "https://xda-developers.com",
 			"ZDNET": "https://zdnet.com"
 		}
 	},

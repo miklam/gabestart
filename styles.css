@@ -6,20 +6,24 @@
 /* TODO: Create Custom Theme Template to be imported */
 /* Colors and other var*/
 :root {
+
+    /* GLOBAL  COLORS  */
     --bg: #f8f8f2;
-    --black: #282a36;
-    --blue: rgb(98,114,164);
     --fg: #282a36;
-    --fontFamily: 'IBM Plex Mono', monospace;
+    --secondaryBg: #f1f1f1;
+
+    --black: #282a36;
+    --blue: rgb(98, 114, 164);
     --green: #50fa7b;
-    --invert: 0;
     --orange: #ffb86c;
     --purple: #9580ff;
     --red: #ff5555;
-    --scrollbar: #6272a4;
-    --secondaryBg: #f1f1f1;
     --white: #f8f8f2;
     --yellow: #f1fa8c;
+
+    --fontFamily: 'IBM Plex Mono', monospace;
+    --invert: 0;
+    --scrollbar: #6272a4;
 
     /* CUSTOM USERNAME COLORS */
     --usernameBg: #282a36;
@@ -28,10 +32,12 @@
 
 .dark-mode {
     --bg: #282a36;
-    --black: #282a36;
     --fg: #f8f8f2;
-    --invert: 1;
+
     --secondaryBg: #44475a;
+
+    --black: #282a36;
+    --invert: 1;
 
     /* CUSTOM USERNAME COLORS */
     --usernameBg: #50fa7b;
@@ -172,7 +178,7 @@ button#clear-field img {
 
 /* Link Table */
 .table-container {
-    align-items: space-between;
+    align-items: space-between*;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -398,10 +404,11 @@ div#nowPlaying-container {
     animation: scroll-left 20s linear infinite;
     white-space: nowrap;
     overflow: hidden;
-	display: inline-block;
+    display: inline-block;
 }
 
-#playingInfo p.playing-now:hover, #playingInfo p.playing-not:hover {
+#playingInfo p.playing-now:hover,
+#playingInfo p.playing-not:hover {
     animation-play-state: paused;
 }
 
@@ -420,12 +427,12 @@ span.info-connector {
 }
 
 #playingInfo p.playing-not {
-	text-transform: lowercase !important;
-	font-style: italic;
-	animation: scroll-left 20s linear infinite;
-	white-space: nowrap;
-	overflow: hidden;
-	display: inline-block;
+    text-transform: lowercase !important;
+    font-style: italic;
+    animation: scroll-left 20s linear infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
 }
 
 p.playing-not a {
@@ -436,6 +443,7 @@ p.playing-not a {
     from {
         transform: translateX(150%);
     }
+
     to {
         transform: translateX(-100%);
     }
