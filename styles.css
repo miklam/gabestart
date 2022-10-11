@@ -497,20 +497,20 @@ p.playing-not a {
 }
 
 .bars .bar.bar1 {
-    animation-duration: 300ms
+    animation-duration: 200ms
 }
 
 .bars .bar.bar2 {
-    animation-duration: 225ms
+    animation-duration: 250ms
 }
 
 .bars .bar.bar3 {
-    animation-duration: 275ms
+    animation-duration: 200ms
 }
 
 @keyframes oscillator {
     0% {
-        height: 60%;
+        height: 20%;
         opacity: .5
     }
 
