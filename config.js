@@ -2,7 +2,7 @@
 var userName = "gabeweb";
 
 // Default Searchengine
-// Available: Google DuckDuckGo Bing Yahoo
+// Available: Bing DuckDuckGo Google Yahoo Yandex
 var searchEngine = "DuckDuckGo";
 
 // Cards
@@ -45,6 +45,7 @@ var cards = [
 	{
 		name: "Social",
 		bookmarks: {
+			"DEV": "https://dev.to",
 			"Discord": "https://discordapp.com",
 			"Facebook": "https://facebook.com",
 			"Instagram": "https://instagram.com/?theme=dark",
@@ -67,6 +68,29 @@ var cards = [
 			"Trakt.tv": "https://trakt.tv",
 			"YouTube": "https://youtube.com",
 			"YouTube Music": "https://music.youtube.com"
+		}
+	},
+	{
+		name: "Tools",
+		bookmarks: {
+			"Bitwarden": "https://vault.bitwarden.com",
+			"Coda": "https://coda.io",
+			"Dropbox": "https://dropbox.com",
+			"Figma": "https://figma.com",
+			"GitHub": "https://github.com",
+			"Google Docs": "https://docs.google.com",
+			"Google Drive": "https://drive.google.com",
+			"Google Passwords": "https://passwords.google.com",
+			"Google Translate": "https://translate.google.com",
+			"KeeWeb": "https://app.keeweb.info",
+			"Notion": "https://notion.so",
+			"Office 365": "https://office.com",
+			"OneDrive": "https://onedrive.com",
+			"Photopea": "https://photopea.com",
+			"VSCode": "https://vscode.dev",
+			"Vectr": "https://vectr.comm",
+			"Write.as": "https://write.as",
+			"Yandex Disk": "https://disk.yandex.com"
 		}
 	}
 ]

@@ -6,10 +6,11 @@ document.getElementById("username").innerHTML = userName;
 
 // Searchbar
 const searchEngines = {
-    Google: "https://www.google.com/search?q=",
-    DuckDuckGo: "https://duckduckgo.com/?q=",
     Bing: "https://www.bing.com/search?q=",
-    Yahoo: "https://search.yahoo.com/search?p="
+    DuckDuckGo: "https://duckduckgo.com/?q=",
+    Google: "https://www.google.com/search?q=",
+    Yahoo: "https://search.yahoo.com/search?p=",
+    Yandex: "https://yandex.com/search/?text="
 };
 const searchField = document.getElementById("search-field");
 const clearFieldButton = document.getElementById("clear-field");
