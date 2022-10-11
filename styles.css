@@ -503,11 +503,11 @@ p.playing-not a {
 }
 
 .bars .bar.bar1 {
-    animation-duration: 200ms
+    animation-duration: 400ms
 }
 
 .bars .bar.bar2 {
-    animation-duration: 250ms
+    animation-duration: 700ms
 }
 
 .bars .bar.bar3 {
