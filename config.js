@@ -26,12 +26,14 @@ var cards = [
 			"Ars Technica": "https://arstechnica.com",
 			"BBC News": "https://bbc.com",
 			"CNET": "https://cnet.com",
+			"Consequence": "https://consequence.net",
 			"Digg": "https://digg.com",
 			"Forbes": "https://forbes.com",
 			"Mashable": "https://mashable.com",
 			"Newsweek":"https://newsweek.com",
 			"NY Times": "https://nytimes.com",
 			"NPR": "https://npr.org",
+			"Pitchfork": "https://pitchfork.com",
 			"Quartz":"https://qz.com",
 			"Reuters":"https://reuters.com",
 			"The Guardian":"https://theguardian.com",
@@ -49,12 +51,15 @@ var cards = [
 			"Discord": "https://discordapp.com",
 			"Facebook": "https://facebook.com",
 			"Instagram": "https://instagram.com/?theme=dark",
+			"Messenger": "https://messenger.com",
 			"Quora": "https://quora.com",
 			"Reddit": "https://reddit.com",
 			"Stack Exchange": "https://stackexchange.com",
+			"Telegram": "https://web.telegram.org",
 			"Tumblr": "https://tumblr.com",
 			"Twitter": "https://twitter.com",
-			"VK": "https://vk.com"
+			"VK": "https://vk.com",
+			"WhatsApp": "https://web.whatsapp.com"
 		}
 	},
 	{

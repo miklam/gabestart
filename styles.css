@@ -245,7 +245,8 @@ button#clear-field img {
 
 /* Colors */
 .tab.active[data-tab*="1"],
-.content[data-tab*="1"] a:hover {
+.content[data-tab*="1"] a:hover,
+.tab[data-tab*="1"]:hover {
     background-color: var(--blue);
     color: var(--white);
 
@@ -253,7 +254,8 @@ button#clear-field img {
 }
 
 .tab.active[data-tab*="2"],
-.content[data-tab*="2"] a:hover {
+.content[data-tab*="2"] a:hover,
+.tab[data-tab*="2"]:hover {
     background-color: var(--green);
     color: var(--black);
 
@@ -261,7 +263,8 @@ button#clear-field img {
 }
 
 .tab.active[data-tab*="3"],
-.content[data-tab*="3"] a:hover {
+.content[data-tab*="3"] a:hover,
+.tab[data-tab*="3"]:hover {
     background-color: var(--orange);
     color: var(--black);
 
@@ -269,7 +272,8 @@ button#clear-field img {
 }
 
 .tab.active[data-tab*="4"],
-.content[data-tab*="4"] a:hover {
+.content[data-tab*="4"] a:hover,
+.tab[data-tab*="4"]:hover {
     background-color: var(--red);
     color: var(--white);
 
@@ -277,7 +281,8 @@ button#clear-field img {
 }
 
 .tab.active[data-tab*="5"],
-.content[data-tab*="5"] a:hover {
+.content[data-tab*="5"] a:hover,
+.tab[data-tab*="5"]:hover {
     background-color: var(--purple);
     color: var(--black);
 
@@ -299,14 +304,15 @@ button#clear-field img {
 }
 
 /* Screens larger than a average phone */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
 
     #tab-container {
         background-color: transparent;
     }
 
     .tab,
-    .tab.active[data-tab^="tab"] {
+    .tab.active[data-tab^="tab"],
+    .tab[data-tab^="tab"]:hover {
         background-color: var(--secondaryBg);
         border-radius: 0.75rem 0.75rem 0 0;
         font-size: 1.5em;
@@ -354,7 +360,7 @@ button#clear-field img {
 }
 
 /* Screens larger than a average tab */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 800px) {
 
     #search {
         width: 60%;
@@ -366,7 +372,7 @@ button#clear-field img {
 }
 
 /* DeskTop Screen */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 7200px) {
 
     #search {
         width: 40%
