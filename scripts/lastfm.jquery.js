@@ -70,155 +70,154 @@ $('#nowPlayingBox').nowplaying({
 */
 
 (function ($) {
+  /* ######################### Now Playing Class definition ################################# */
 
-    /* ######################### Now Playing Class definition ################################# */
+  var nowPlayingClass = function (elem, options) {
+    var $myDiv = elem,
+      refresh = parseInt(options["refresh"], 20),
+      timer,
+      lastCurrentPlaying = false;
 
-    var nowPlayingClass = function (elem, options) {
-
-        var $myDiv = elem,
-            refresh = parseInt(options['refresh'], 20),
-            timer,
-            lastCurrentPlaying = false;
-
-        if (refresh > 0) {
-            timer = window.setInterval(function () {
-                nowPlayingInterval();
-            }, refresh * 1000);
-        }
-
+    if (refresh > 0) {
+      timer = window.setInterval(function () {
         nowPlayingInterval();
+      }, refresh * 1000);
+    }
 
-        function nowPlayingInterval() {
+    nowPlayingInterval();
 
-            // remove error div if exists
-            $myDiv.children('.error').remove();
+    function nowPlayingInterval() {
+      // remove error div if exists
+      $myDiv.children(".error").remove();
 
-            //create URL
-            var url = 'https://ws.audioscrobbler.com/2.0/?callback=?',
-                params = {
-                    method: "user.getrecenttracks",
-                    format: "json",
-                    limit: 1,
-                    user: options.username,
-                    api_key: options.apikey
-                };
+      //create URL
+      var url = "https://ws.audioscrobbler.com/2.0/?callback=?",
+        params = {
+          method: "user.getrecenttracks",
+          format: "json",
+          limit: 1,
+          user: options.username,
+          api_key: options.apikey,
+        };
 
-            //sending request
-            $.getJSON(url, params, function (data) {
-
-                //check for errors
-                if (!data || !data.recenttracks) {
-                    return error('Username "' + options.username + '" does not exist!');
-                } else if (!data.recenttracks.track) {
-                    return error('"' + options.username + '" has no tracks to show!');
-                }
-
-                var track = data.recenttracks.track[0];
-
-                if (track && track['@attr'] && track['@attr'].nowplaying == 'true') {
-                    var html = '';
-
-                    if (options.icon) {
-                        html = html + '<p class="playingNow"><img src="' + options.icon + '" class="icon" />' + '&nbsp';
-                    }
-
-                    html = html + '<span class="titleNowPlaying">Now Playing:<br></span>' + '<p class="playing-now"><span class="playing-info"><span class="track">' + track.name + '</span>' + '<span class="info-connector"> by </span>' + '<span class="artist">' + track.artist['#text'] + '</span></span>';
-
-                    if (track.album['#text']) {
-                        html = html + '<span class="album"><span class="info-connector"> from </span>' + track.album['#text'] + '</span></p>';
-                    };
-
-                    $myDiv.show();
-                    update(html);
-                } else {
-                    if (options.hide) {
-                        $myDiv.hide();
-                    } else {
-                        update(options.notplayingtext)
-                    }
-                }
-
-            });
-
+      //sending request
+      $.getJSON(url, params, function (data) {
+        //check for errors
+        if (!data || !data.recenttracks) {
+          return error('Username "' + options.username + '" does not exist!');
+        } else if (!data.recenttracks.track) {
+          return error('"' + options.username + '" has no tracks to show!');
         }
 
-        function error(message) {
-            $("<p>", {
-                className: "error",
-                html: message
-            }).appendTo($myDiv);
-            window.clearInterval(timer);
+        var track = data.recenttracks.track[0];
+
+        if (track && track["@attr"] && track["@attr"].nowplaying == "true") {
+          var html = "";
+
+          if (options.icon) {
+            html =
+              html +
+              '<p class="playingNow"><img src="' +
+              options.icon +
+              '" class="icon" />' +
+              "&nbsp";
+          }
+
+          html =
+            html +
+            '<span class="titleNowPlaying">Now Playing:<br></span>' +
+            '<p class="playing-now"><object class="bars"><button class="bar bar1" /><button class="bar bar2" /><button class="bar bar3" /></object><span class="playing-info"><span class="track">' +
+            track.name +
+            "</span>" +
+            '<span class="info-connector"> by </span>' +
+            '<span class="artist">' +
+            track.artist["#text"] +
+            "</span></span>";
+
+          if (track.album["#text"]) {
+            html =
+              html +
+              '<span class="album"><span class="info-connector"> from </span>' +
+              track.album["#text"] +
+              "</span></p>";
+          }
+
+          $myDiv.show();
+          update(html);
+        } else {
+          if (options.hide) {
+            $myDiv.hide();
+          } else {
+            update(options.notplayingtext);
+          }
         }
+      });
+    }
 
-        function update(html) {
-            $myDiv.html(html);
-        }
+    function error(message) {
+      $("<p>", {
+        className: "error",
+        html: message,
+      }).appendTo($myDiv);
+      window.clearInterval(timer);
+    }
 
-    };
+    function update(html) {
+      $myDiv.html(html);
+    }
+  };
 
-    /* ######################## Now Playing Class ends here ################################# */
+  /* ######################## Now Playing Class ends here ################################# */
 
+  /* ##################################### Recent Tracks Function ########################### */
 
+  $.fn.lastplayed = function (options) {
+    var opts = $.extend({}, $.fn.lastplayed.defaults, options);
 
+    if (typeof options.username === "undefined") {
+      return this;
+    }
 
+    if (typeof options.apikey === "undefined") {
+      return this;
+    }
 
+    return this.each(function () {
+      recentTracksClass($(this), opts);
+    });
+  };
 
+  $.fn.lastplayed.defaults = {
+    limit: 20,
+    refresh: 0,
+    cover: true,
+    datetime: true,
+    grow: false,
+    shownowplaying: true,
+  };
 
+  /* ################################# Now Playing Function ################################ */
 
-    /* ##################################### Recent Tracks Function ########################### */
+  $.fn.nowplaying = function (options) {
+    var opts = $.extend({}, $.fn.nowplaying.defaults, options);
 
-    $.fn.lastplayed = function (options) {
-        var opts = $.extend({}, $.fn.lastplayed.defaults, options);
+    if (typeof options.username === "undefined") {
+      return this;
+    }
 
-        if (typeof (options.username) === "undefined") {
-            return this;
-        }
+    if (typeof options.apikey === "undefined") {
+      return this;
+    }
 
-        if (typeof (options.apikey) === "undefined") {
-            return this;
-        }
+    return this.each(function () {
+      nowPlayingClass($(this), opts);
+    });
+  };
 
-        return this.each(function () {
-            recentTracksClass($(this), opts);
-        });
-
-    };
-
-    $.fn.lastplayed.defaults = {
-        limit: 20,
-        refresh: 0,
-        cover: true,
-        datetime: true,
-        grow: false,
-        shownowplaying: true
-    };
-
-
-
-    /* ################################# Now Playing Function ################################ */
-
-    $.fn.nowplaying = function (options) {
-        var opts = $.extend({}, $.fn.nowplaying.defaults, options);
-
-        if (typeof (options.username) === "undefined") {
-            return this;
-        }
-
-        if (typeof (options.apikey) === "undefined") {
-            return this;
-        }
-
-        return this.each(function () {
-            nowPlayingClass($(this), opts);
-        });
-
-    };
-
-    $.fn.nowplaying.defaults = {
-        refresh: 0,
-        icon: false,
-        hide: false,
-        notplayingtext: 'nothing playing'
-    };
-
-}(jQuery));
+  $.fn.nowplaying.defaults = {
+    refresh: 0,
+    icon: false,
+    hide: false,
+    notplayingtext: "nothing playing",
+  };
+})(jQuery);
