@@ -113,7 +113,8 @@ for (let i = 0; i < tabs.length; i++) {
     }
 
     // Make tab active on mouse click
-    tabs[i].addEventListener('mouseenter', function () {
+    tabs[i].addEventListener('click',
+     function () {
         for (let j = 0; j < tabs.length; j++) {
             tabs[j].classList.remove('active');
         }
