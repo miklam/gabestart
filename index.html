@@ -19,19 +19,22 @@
 
   <script type="text/javascript" src="scripts/lastfm.jquery.js"></script>
   <script type="text/javascript">
-            /*<![CDATA[*/ $(document).ready(function () {
-              $("#lastBox").lastplayed({
-                apikey: "518602081119232574d506e55f6d2892",
-                username: "gabeweb",
-                limit: 5,
-                refresh: 30,
-              });
-              $("#playingInfo").nowplaying({
-                apikey: "518602081119232574d506e55f6d2892", username: "gabeweb", refresh: 60, notplayingtext: '<p class="playing-not">See recently played tracks on: <a href="https://last.fm/user/gabeweb" target="_blank">last.fm/user/gabeweb</a></p>'
-              })
-            }); /*]]>*/
+      /*<![CDATA[*/ $(document).ready(function () {
+        $("#lastBox").lastplayed({
+          apikey: "518602081119232574d506e55f6d2892",
+          username: "gabeweb",
+          limit: 5,
+          refresh: 30,
+        });
+        $("#playingInfo").nowplaying({
+          apikey: "518602081119232574d506e55f6d2892",
+          username: "gabeweb",
+          refresh: 60,
+          notplayingtext:
+            '<p class="playing-not">See recently played tracks on: <a href="https://last.fm/user/gabeweb" target="_blank">last.fm/user/gabeweb</a></p>',
+        });
+      }); /*]]>*/
   </script>
-
 </head>
 
 <body>
@@ -39,14 +42,17 @@
     <h1>Hi, <span id="username" onclick="toggleMode()"></span></h1>
 
     <div id="nowPlaying-container">
-      <div id="playingInfo">
-      </div>
+      <div id="playingInfo"></div>
     </div>
 
     <div id="search">
       <input id="search-field" type="text" />
-      <button id="clear-field" onclick="clearField()"><img src="asset/icons/close.svg" alt="clear"></button>
-      <button id="search-button" onclick="search()"><img src="asset/icons/loupe.svg" alt="Go"></button>
+      <button id="clear-field" onclick="clearField()">
+        <img src="asset/icons/close.svg" alt="clear" />
+      </button>
+      <button id="search-button" onclick="search()">
+        <img src="asset/icons/loupe.svg" alt="Go" />
+      </button>
     </div>
 
     <div class="table-container">
@@ -65,15 +71,18 @@
         <div class="content" data-tab="tab-4"></div>
         <div class="content" data-tab="tab-5"></div>
       </div>
+    </div>
 
-      <div class="footer">
 
-        <a href="https://github.com/gabeweb/gabestart" target="_blank">GABEstart</a> is a startpage forked from <a
-          href="https://github.com/MrAlpha786/getstarted" target="_blank">GetStarted</a> including some elements from <a
-          href="https://github.com/RowanFeely/StarterPage" target="_blank">StarterPage</a> and distribuited under <a
-          href="https://github.com/gabeweb/gabestart/blob/main/LICENSE" target="_blank">GPL-3.0 license</a>.
-
-      </div>
+    <div class="footer">
+      <div id="footer-inner">
+      <a href="https://github.com/gabeweb/gabestart" target="_blank">GABEstart</a>
+      is a startpage forked from
+      <a href="https://github.com/MrAlpha786/getstarted" target="_blank">GetStarted</a>
+      including some elements from
+      <a href="https://github.com/RowanFeely/StarterPage" target="_blank">StarterPage</a>
+      and distribuited under
+      <a href="https://github.com/gabeweb/gabestart/blob/main/LICENSE" target="_blank">GPL-3.0 license</a>.</div>
     </div>
 
     <!-- WAVEFORMS TAKEN FROM
@@ -84,18 +93,16 @@
         d="M1920 250H0V0s126.707 78.536 349.975 80.05c177.852 1.203 362.805-63.874 553.803-63.874 290.517 0 383.458 57.712 603.992 61.408 220.527 3.696 278.059-61.408 412.23-17.239">
       </path>
       <path id="waveform-2"
-        d="M1920 144s-467.917 116.857-1027.243-17.294C369.986 1.322 0 45.578 0 45.578V250h1920V144z">
-      </path>
+        d="M1920 144s-467.917 116.857-1027.243-17.294C369.986 1.322 0 45.578 0 45.578V250h1920V144z"></path>
       <path id="waveform-3"
-        d="M0 195.553s208.547-75.581 701.325-20.768c376.707 41.908 520.834-67.962 722.545-67.962 222.926 0 311.553 83.523 496.129 86.394V250H0v-54.447z"
-        </path>
+        d="M0 195.553s208.547-75.581 701.325-20.768c376.707 41.908 520.834-67.962 722.545-67.962 222.926 0 311.553 83.523 496.129 86.394V250H0v-54.447z">
+      </path>
     </svg>
   </div>
 
   <script src="config.js"></script>
   <script src="main.js"></script>
   <script src="app.js"></script>
-
 </body>
 
 </html>

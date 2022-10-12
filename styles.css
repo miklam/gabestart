@@ -93,11 +93,10 @@
      align-items: center;
      display: flex;
      flex-direction: column;
-     height: 100vh;
+     /*height: 100vh;*/
      justify-content: flex-start;
      margin: auto;
-     padding-bottom: 5vh;
-     padding-top: 5vh;
+     padding-top: 2vmax;
      width: 100%;
  }
 
@@ -201,7 +200,7 @@
      background-color: var(--secondaryBg);
      display: none;
      flex-direction: column;
-     max-height: 35vh;
+     height: 35vh;
      overflow: auto;
      padding-bottom: 0.75em;
  }
@@ -279,12 +278,18 @@
      color: var(--black);
  }
 
+/* SPACER TEMPORARY FIX
+/* Betweem table container and footer
+/* For landscape and portrait modes
+*/
+
  .footer {
      font-size: 90%;
-     margin-top: 40px;
-     margin-bottom: -80px;
+     margin: 5vh auto 1em auto;
+     padding: .5em;
      position: relative;
      text-align: center;
+     width: 90%;
  }
 
  .footer a {
@@ -298,6 +303,11 @@
 
  .footer>a:hover {
      filter: opacity(1);
+ }
+
+ #footer-inner {
+    position: sticky;
+    bottom: 1em;
  }
 
  /* Screens larger than a average phone */
