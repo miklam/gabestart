@@ -93,33 +93,12 @@
      align-items: center;
      display: flex;
      flex-direction: column;
-     height: 100vx;
+     height: 100vh;
      justify-content: flex-start;
      margin: auto;
      padding-bottom: 5vh;
      padding-top: 5vh;
      width: 100%;
- }
-
- .footer {
-     font-size: 90%;
-     margin-top: 40px;
-     margin-bottom: -80px;
-     position: relative;
-     text-align: center;
- }
-
- .footer a {
-     filter: opacity(0.5);
- }
-
- .footer a {
-     text-decoration: underline;
-     filter: opacity(0.5);
- }
-
- .footer>a:hover {
-     filter: opacity(1);
  }
 
  /* Greeting */
@@ -298,6 +277,27 @@
 
  .tab.active[data-tab*="3"] a:hover {
      color: var(--black);
+ }
+
+ .footer {
+     font-size: 90%;
+     margin-top: 40px;
+     margin-bottom: -80px;
+     position: relative;
+     text-align: center;
+ }
+
+ .footer a {
+     filter: opacity(0.5);
+ }
+
+ .footer a {
+     text-decoration: underline;
+     filter: opacity(0.5);
+ }
+
+ .footer>a:hover {
+     filter: opacity(1);
  }
 
  /* Screens larger than a average phone */
