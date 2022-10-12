@@ -1,12 +1,11 @@
 /* GetStarted - A simple responsive Startpage
  * Author: MrAlpha786 (github.con/MrAlpha786) */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono");
 
 /* TODO: Create Custom Theme Template to be imported */
 /* Colors and other var*/
 :root {
-
     /* GLOBAL  COLORS  */
     --bg: #f8f8f2;
     --fg: #282a36;
@@ -21,7 +20,7 @@
     --white: #f8f8f2;
     --yellow: #f1fa8c;
 
-    --fontFamily: 'IBM Plex Mono', monospace;
+    --fontFamily: "IBM Plex Mono", monospace;
     --invert: 0;
     --scrollbar: #6272a4;
 
@@ -94,7 +93,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100vx;
     justify-content: flex-start;
     margin: auto;
     padding-bottom: 5vh;
@@ -103,22 +102,20 @@ body {
 }
 
 .footer {
-    bottom: 0;
     font-size: 90%;
-    left: 0;
-    padding: 20px;
-    position: absolute;
+    margin-top: 40px;
+    margin-bottom: -80px;
+    position: relative;
     text-align: center;
-    width: 100%;
 }
 
 .footer a {
-    filter: opacity(.5);
+    filter: opacity(0.5);
 }
 
 .footer a {
     text-decoration: underline;
-    filter: opacity(.5);
+    filter: opacity(0.5);
 }
 
 .footer>a:hover {
@@ -182,7 +179,7 @@ button#clear-field img {
 
 /* Link Table */
 .table-container {
-    align-items: space-between*;
+    align-items: space-between *;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,7 +302,6 @@ button#clear-field img {
 
 /* Screens larger than a average phone */
 @media screen and (min-width: 800px) {
-
     #tab-container {
         background-color: transparent;
     }
@@ -361,7 +357,6 @@ button#clear-field img {
 
 /* Screens larger than a average tab */
 @media screen and (min-width: 800px) {
-
     #search {
         width: 60%;
     }
@@ -373,9 +368,8 @@ button#clear-field img {
 
 /* DeskTop Screen */
 @media screen and (min-width: 7200px) {
-
     #search {
-        width: 40%
+        width: 40%;
     }
 
     .table-container {
@@ -399,15 +393,15 @@ button#clear-field img {
 }
 
 #waveform-1 {
-    opacity: .1
+    opacity: 0.1;
 }
 
 #waveform-2 {
-    opacity: .2;
+    opacity: 0.2;
 }
 
 #waveform-3 {
-    opacity: .3;
+    opacity: 0.3;
 }
 
 /* LAST.FM NOW PLAYING WIDGET */
@@ -503,26 +497,26 @@ p.playing-not a {
 }
 
 .bars .bar.bar1 {
-    animation-duration: 400ms
+    animation-duration: 400ms;
 }
 
 .bars .bar.bar2 {
-    animation-duration: 700ms
+    animation-duration: 700ms;
 }
 
 .bars .bar.bar3 {
-    animation-duration: 200ms
+    animation-duration: 200ms;
 }
 
 @keyframes oscillator {
     0% {
         height: 20%;
-        opacity: .5
+        opacity: 0.5;
     }
 
     to {
         height: 100%;
-        opacity: 1
+        opacity: 1;
     }
 }
 
