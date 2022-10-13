@@ -468,7 +468,7 @@ span.info-connector {
     animation: scroll-left 20s linear infinite;
     white-space: nowrap;
     overflow: hidden;
-    display: inline-block;
+    display: inline-flex;
 }
 
 p.playing-not a {
