@@ -65,7 +65,11 @@ var cards = [
 	{
 		name: "Media",
 		bookmarks: {
+			"Behance": "https://behance.net",
 			"Crumchyroll": "https://crunchyroll.com",
+			"Deviantart": "https://deviantart.com",
+			"Dribbble": "https://dribbble.com",
+			"Ello": "https://ello.co",
 			"Last.fm": "https://last.fm",
 			"Pluto TV": "https://pluto.tv",
 			"Runtime": "https://runtime.tv",
