@@ -25,6 +25,7 @@ var cards = [
 			"AP News":"https://apnews.com",
 			"Ars Technica": "https://arstechnica.com",
 			"BBC News": "https://bbc.com",
+			"Boing Boing": "https://boingboing.net",
 			"CNET": "https://cnet.com",
 			"Consequence": "https://consequence.net",
 			"Digg": "https://digg.com",
@@ -40,6 +41,7 @@ var cards = [
 			"The Verge": "https://theverge.com",
 			"TIME":"https://time.com",
 			"TNW": "https://thenextweb.com",
+			"Vox":"https://vox.com",
 			"XDA": "https://xda-developers.com",
 			"ZDNET": "https://zdnet.com"
 		}
