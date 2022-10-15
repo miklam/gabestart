@@ -1,7 +1,7 @@
 /* GetStarted - A simple responsive Startpage
  * Author: MrAlpha786 (github.con/MrAlpha786) */
 
- @font-face{
+@font-face {
   font-family: "IBM Plex Mono";
   src: url("/asset/fonts/IBMPlexMono-Regular.otf");
 }
@@ -127,7 +127,7 @@ body {
 #search-field {
   background-color: transparent;
   font-size: 1rem;
-  padding: 0.75em 0.5em 0.75em 1em;
+  padding: 0.75em 0.5em 0.75em 0.75em;
   text-align: left;
   width: 100%;
 }
@@ -156,6 +156,30 @@ button#clear-field {
 button#clear-field img {
   height: 0.9em;
   width: 0.9em;
+}
+
+#search-favicon {
+  --favicon-bing: url("/asset/icons/favicon-bing.svg");
+  --favicon-duckduckgo: url("/asset/icons/favicon-duckduckgo.svg");
+  --favicon-google: url("/asset/icons/favicon-google.svg");
+  --favicon-yahoo: url("/asset/icons/favicon-yahoo.svg");
+  --favicon-yandex: url("/asset/icons/favicon-yandex.svg");
+
+  --faviconSearch: var(--favicon-duckduckgo);
+}
+
+/* COOL FAVICON SEARCH ENGINE */
+#search-favicon::before {
+  content: var(--faviconSearch);
+  display: inline;
+  filter: invert(var(--invert)) grayscale(100%) saturate(1);
+  opacity: 0.6;
+}
+
+#search-favicon {
+  height: 32px;
+  width: 40px;
+  padding: 0px 10px;
 }
 
 /* Link Table */
@@ -263,7 +287,6 @@ button#clear-field img {
 }
 
 /* FIX FOR DRACULA-EST THEME */
-
 .tab.active[data-tab*="1"] a:hover {
   color: var(--black);
 }
