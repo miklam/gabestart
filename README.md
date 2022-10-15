@@ -14,7 +14,7 @@ See `config.js` file for customization.
 
 You must edit (in `index.html` file) the following strings:
 
-```html
+```javascript
 <script type="text/javascript">
             /*<![CDATA[*/ $(document).ready(function () {
                 $("#lastBox").lastplayed({
@@ -28,6 +28,53 @@ You must edit (in `index.html` file) the following strings:
                 })
             }); /*]]>*/
   </script>
+```
+
+<em>Advice:</em>
+
+> If you're using an adblocker or script blocker you must give permission to access to https://ws.audioscrobbler.com in your personal filters, otherwise the Last.fm widget can't work properly.
+
+### Colors
+
+In the `style.css` you can set an accent color (global) for `username`, `scrollbar` and `parallax` (`waveforms` decoration). Just change the `--accentColor` with a predefined color variable or standard HTML/CSS code color.
+
+Predefined color availables (all of them according to the `Dracula` color palette):
+
+```javascript
+var(--black)    // or #282a36
+var(--blue)     // or rgb(98, 114, 164)
+var(--green)    // or #50fa7b
+var(--orange)   // or #ffb86c
+var(--purple)   // or #9580ff
+var(--red)      // or #ff5555
+var(--white)    // or #f8f8f2
+var(--yellow)   // or #f1fa8c
+```
+
+### Search Engine
+
+In the `main.js` file is set the _dark_ code to make the search box working. You can add, remove or edit the search engine here. Meanwhile in the `config.js` you'll set the default search engine:
+
+```javascript
+var searchEngine = "DuckDuckGo";
+```
+
+As a plus, you can show or hide the search engine favicon in the `styles.css` file.
+
+The default favicon is:
+
+```css
+--faviconSearch: var(--favicon-duckduckgo);
+```
+
+and the available favicons are:
+
+```css
+--favicon-bing
+--favicon-duckduckgo
+--favicon-google
+--favicon-yahoo
+--favicon-yandex
 ```
 
 ## Credits
