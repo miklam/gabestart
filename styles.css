@@ -159,11 +159,11 @@ button#clear-field img {
 }
 
 #search-favicon {
-  --favicon-bing: url("/asset/icons/favicon-bing.svg");
-  --favicon-duckduckgo: url("/asset/icons/favicon-duckduckgo.svg");
-  --favicon-google: url("/asset/icons/favicon-google.svg");
-  --favicon-yahoo: url("/asset/icons/favicon-yahoo.svg");
-  --favicon-yandex: url("/asset/icons/favicon-yandex.svg");
+  --favicon-bing: url("asset/icons/favicon-bing.svg");
+  --favicon-duckduckgo: url("asset/icons/favicon-duckduckgo.svg");
+  --favicon-google: url("asset/icons/favicon-google.svg");
+  --favicon-yahoo: url("asset/icons/favicon-yahoo.svg");
+  --favicon-yandex: url("asset/icons/favicon-yandex.svg");
 
   --faviconSearch: var(--favicon-duckduckgo);
 }
