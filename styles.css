@@ -36,18 +36,21 @@
   --usernameFg: var(--accentColor);
 }
 
-.dark-mode {
-  --bg: #282a36;
-  --fg: #f8f8f2;
+@media (prefers-color-scheme: dark) {
+  :root,
+  .dark-mode {
+    --bg: #282a36;
+    --fg: #f8f8f2;
 
-  --secondaryBg: #44475a;
+    --secondaryBg: #44475a;
 
-  --black: #282a36;
-  --invert: 1;
+    --black: #282a36;
+    --invert: 1;
 
-  /* CUSTOM USERNAME COLORS */
-  --usernameBg: var(--accentColor);
-  --usernameFg: #282a36;
+    /* CUSTOM USERNAME COLORS */
+    --usernameBg: var(--accentColor);
+    --usernameFg: #282a36;
+  }
 }
 
 body {
@@ -108,7 +111,7 @@ body {
   background-color: var(--usernameBg);
   border-radius: 2em;
   color: var(--usernameFg);
-  cursor: pointer;
+  /*cursor: pointer;*/
   padding: 0 0.5em;
 }
 
@@ -481,12 +484,13 @@ div#nowPlaying-container #playingInfo p {
   margin: 5px;
 }
 
-#playingInfo p.playing-now {
+#playingInfo p.playing-now,
+#playingInfo p.playing-not {
   text-transform: uppercase;
   animation: scroll-left 20s linear infinite;
   white-space: nowrap;
   overflow: hidden;
-  display: inline-block;
+  -webkit-display: inline-block;
 }
 
 #playingInfo p.playing-now:hover,
