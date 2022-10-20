@@ -10,10 +10,10 @@
 /* Colors and other var*/
 :root {
   /* GLOBAL  COLORS  */
-    --bg: #282a36;
-    --fg: #f8f8f2;
+  --bg: #282a36;
+  --fg: #f8f8f2;
 
-    --secondaryBg: #44475a;
+  --secondaryBg: #44475a;
 
   --black: #282a36;
   --blue: rgb(98, 114, 164);
@@ -25,7 +25,8 @@
   --yellow: #f1fa8c;
 
   --fontFamily: "IBM Plex Mono", monospace;
-  --invert: 1; /* In light mode is vice-versa */
+  --invert: 1;
+  /* In light mode is vice-versa */
   --scrollbar: var(--accentColor);
 
   /* PREFERRED ACCEMT */
@@ -34,8 +35,9 @@
 
   /* CUSTOM USERNAME COLORS */
 
-    --usernameBg: var(--accentColor); /* In light mode is vice-versa */
-    --usernameFg: #282a36;
+  --usernameBg: var(--accentColor);
+  /* In light mode is vice-versa */
+  --usernameFg: #282a36;
 }
 
 /* @media (prefers-color-scheme: dark) {
