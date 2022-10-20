@@ -10,9 +10,10 @@
 /* Colors and other var*/
 :root {
   /* GLOBAL  COLORS  */
-  --bg: #f8f8f2;
-  --fg: #282a36;
-  --secondaryBg: #f1f1f1;
+    --bg: #282a36;
+    --fg: #f8f8f2;
+
+    --secondaryBg: #44475a;
 
   --black: #282a36;
   --blue: rgb(98, 114, 164);
@@ -24,7 +25,7 @@
   --yellow: #f1fa8c;
 
   --fontFamily: "IBM Plex Mono", monospace;
-  --invert: 0;
+  --invert: 1; /* In light mode is vice-versa */
   --scrollbar: var(--accentColor);
 
   /* PREFERRED ACCEMT */
@@ -32,11 +33,12 @@
   --accentColor: var(--green);
 
   /* CUSTOM USERNAME COLORS */
-  --usernameBg: #282a36;
-  --usernameFg: var(--accentColor);
+
+    --usernameBg: var(--accentColor); /* In light mode is vice-versa */
+    --usernameFg: #282a36;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root,
   .dark-mode {
     --bg: #282a36;
@@ -47,11 +49,10 @@
     --black: #282a36;
     --invert: 1;
 
-    /* CUSTOM USERNAME COLORS */
     --usernameBg: var(--accentColor);
     --usernameFg: #282a36;
   }
-}
+} */
 
 body {
   background-color: var(--bg);
