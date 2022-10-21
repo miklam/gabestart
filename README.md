@@ -1,53 +1,82 @@
-# gabeChrome.css + gabeContent.css
+# GABEstart - A Simple Responsive Startpage
 
-![gabeChrome.css Main window](images/gabechrome-202210-main.png "gabeChrome.css Main window")
-<em>gabeChrome.css + [WaveFox](https://github.com/QNetITQ/WaveFox) in Mozilla Firefox Developer Edition 107 and [Dracula X GABE](https://addons.mozilla.org/en-US/firefox/addon/dracula-x-gabe/) theme for Firefox</em>
+![Gif](asset/gabestart-demo.gif)
 
-Minimal customizations for modern versions of [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/new/) and [LibreWolf](https://librewolf.net/).
+**GABEstart** is a simple, clean startpage which can be used on any device like phone, pad, desktop, etc.
 
-**Free download [from here](https://github.com/gabeweb/gabeChrome.css/archive/refs/heads/main.zip)!**
+It has dark ([Dracula](https://draculatheme.com/contribute)-est theme) and light mode. And website links are customizable.
 
-## Key Features
+## Customizations
 
-![gabeChrome.css and go-buttom in URL bar](images/gabechrome-202210-go_button.png)
-<em>gabeChrome.css and `go-buttom` in URL bar, `tab counter` and verify icon in green</em>
+See `config.js` file for customization.
 
-- Only show close buttons ❌ on background tabs when hovering with the mouse
-- URL bar `go-button` ➡ (as old-school Firefox)
-- Tab counter + show tab manager button even when tabs aren't overflowing
-- Verify icon gray ⚫ to green 🟢
-- Move `Find Bar` above the page (why not?) for Google Chrome `new kids on the Firefox block`
-- `Status Panel` in another color
-- Hide the email address in the `hamburger menu`
-- Grid view for `overflow menu`
-- Show percentage download progress (experimental)
-- **NEW:** `userContent.css` file for hiding search box in default Firefox / LibreWolf page
+### Last.fm Now Playing widget
 
-![Grid view for overflow pane](images/gabechrome-202210-overflow_pane.png)
-<em>Grid view for overflow pane</em>
+You must edit (in `index.html` file) the following strings:
 
-![Hiding email address in Firefox menu](images/gabechrome-202210-email_hidden.png)
-<em>Hiding email address in Firefox menu</em>
+```javascript
+<script type="text/javascript">
+            /*<![CDATA[*/ $(document).ready(function () {
+                $("#lastBox").lastplayed({
+                    apikey: "[YOU NEED TO GENERATE YOUR OWN LAST.FM API KEY]",
+                    username: "[YOUR LAST.FM USER NAME]",
+                    limit: 5,
+                    refresh: 30,
+                });
+                $("#playingInfo").nowplaying({
+                    apikey: "[YOUR LAST.FM API KEY]", username: "[YOUR LAST.FM USERNAME]", refresh: 60, notplayingtext: '<p class="playing-not">See recently played tracks on: <a href="https://last.fm/user/[USERNAME]" target="_blank">last.fm/user/[USERNAME]</a></p>'
+                })
+            }); /*]]>*/
+  </script>
+```
 
-## Compatibility
+<em>Advice:</em>
 
-- As october 2022: tested in Mozilla Firefox 106+ / LibreWolf 105+
-- Can be used with other `userChrome.css` and `userContent.css` tweaks.
+> If you're using an adblocker or script blocker you must give permission to access to https://ws.audioscrobbler.com in your personal filters, otherwise the Last.fm widget can't work properly.
 
-## How-To Apply?
+### Colors
 
-1. Your must enable via `about:config` the `toolkit.legacyUserProfileCustomizations.stylesheets` in Mozilla Firefox or LibreWolf.
+In the `style.css` you can set an accent color (global) for `username`, `scrollbar` and `parallax` (`waveforms` decoration). Just change the `--accentColor` with a predefined color variable or standard HTML/CSS code color.
 
-2. Save the `gabeChrome.css` and `gabeContent.css` files as your `userChrome.css` and ``userContent.css` (if you don't have another `userChrome.css` and `userContent.css` previously, otherwise you can import it into your actual style files) and the `gabeChrome-extras.css`file, all of them in the `chrome` folder of your profile directory: `Roaming\Mozilla\Firefox\Profiles\[User]\chrome` ==> `(%APPDATA%\Mozilla\Firefox\Profiles\` on Windows or go to `about:profiles` in Firefox/LibreWolf and locate the `Roaming` folder of your profile.[^1]
+Predefined color availables (all of them according to the `Dracula` color palette):
 
-3. Restart your browser and enjoy.
+```javascript
+var(--black)    // or #282a36
+var(--blue)     // or rgb(98, 114, 164)
+var(--green)    // or #50fa7b
+var(--orange)   // or #ffb86c
+var(--purple)   // or #9580ff
+var(--red)      // or #ff5555
+var(--white)    // or #f8f8f2
+var(--yellow)   // or #f1fa8c
+```
+
+### Search Engine
+
+In the `main.js` file is set the _dark_ code to make the search box working. You can add, remove or edit the search engine here. Meanwhile in the `config.js` you'll set the default search engine:
+
+```javascript
+var searchEngine = "DuckDuckGo";
+```
+
+As a plus, you can show or hide the search engine favicon in the `styles.css` file.
+
+The default favicon is:
+
+```css
+--faviconSearch: var(--favicon-duckduckgo);
+```
+
+and the available favicons are:
+
+```css
+--favicon-bing
+--favicon-duckduckgo
+--favicon-google
+--favicon-yahoo
+--favicon-yandex
+```
 
 ## Credits
 
-Not for me but the whole [r/FirefoxCSS](https://www.reddit.com/r/firefoxcss/) community always helping to make Firefox (and LibreWolf) our own.
-
-[^1]:For more details please refer to: *[Firefox advanced customization and configuration options](https://support.mozilla.org/en-US/kb/firefox-advanced-customization-and-configuration#firefox:win10:fx106)* and *[Profiles - Where Firefox stores your bookmarks, passwords and other user data](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)* in the official [Firefox Help](https://support.mozilla.org/en-US/questions).
-
----
-
-[more stuff from [GABEweb @ GitHub](https://gabeweb.github.io)]
+Thanks to [MrAlpha786](https://github.com/MrAlpha786) for the original [GetStarted](https://github.com/MrAlpha786/getstarted) startpage, [RowanFeely](https://github.com/RowanFeely) for [StarterPage](https://github.com/RowanFeely/StarterPage) and [Andy Fitzsimon](https://codepen.io/andyfitz) for [the deep blue (waves)](https://codepen.io/andyfitz/pen/aZrKdV) animation.
