@@ -493,7 +493,7 @@ div#nowPlaying-container #playingInfo p {
   animation: scroll-left 20s linear infinite;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-display: inline-block;
+  display: inline-block;
 }
 
 #playingInfo p.playing-now:hover,
