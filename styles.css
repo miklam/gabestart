@@ -38,6 +38,8 @@
   --usernameBg: var(--accentColor);
   /* In light mode is vice-versa */
   --usernameFg: #282a36;
+
+  --bdradius: 0.75em;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -112,33 +114,51 @@ body {
 /* Greeting */
 #username {
   background-color: var(--usernameBg);
-  border-radius: 2em;
+  border-radius: var(--bdradius);
   color: var(--usernameFg);
   /*cursor: pointer;*/
   padding: 0 0.5em;
 }
 
-/* Searchbar */
+/* SEARCH REVAMPED */
+
 #search {
-  align-items: center;
-  background-color: var(--secondaryBg);
-  border-radius: 0.75em;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 2em;
   width: 90%;
+  margin: 1.5em auto 2em auto;
+  position: relative;
 }
 
-#search-field {
-  background-color: transparent;
-  font-size: 1rem;
-  padding: 0.75em 0.5em 0.75em 0.75em;
-  text-align: left;
+#searchbar {
+  border: 0;
+  border-radius: var(--bdradius);
+  display: flex;
+  background-color: var(--secondaryBg);
+  height: 50px;
+  padding: 2px;
+  padding-left: 20px;
+}
+
+#icon {
+  width: 30px;
+  margin: 0 8px 0 -10px;
+  filter: invert(0.4);
+}
+
+#searchInput {
   width: 100%;
+  flex-grow: 2;
+  border: none;
+  background-color: transparent;
+  font-size: 1.1em;
+  color: inherit;
 }
 
-#search button {
+input:focus {
+  outline: none;
+}
+
+#search button,
+#clear-field input {
   background-color: transparent;
   cursor: pointer;
   margin: 0 0.5em 0 0;
@@ -155,37 +175,59 @@ body {
   filter: invert(var(--invert));
 }
 
-button#clear-field {
-  visibility: hidden;
+form input:placeholder-shown + input#clear-field {
+  opacity: 0;
+  pointer-events: none;
 }
 
-button#clear-field img {
-  height: 0.9em;
-  width: 0.9em;
+form input#clear-field {
+  position: absolute;
+  border: none;
+  display: block;
+  width: 18px;
+  height: 18px;
+  line-height: 16px;
+  font-size: 12px;
+  border-radius: 50%;
+  top: 1em;
+  bottom: 1em;
+  right: 3.5em;
+  margin: auto;
+  background: var(--secondaryBg);
+  color: var(--fg);
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  transition: 0.1s;
 }
 
-#search-favicon {
-  --favicon-bing: url("asset/icons/favicon-bing.svg");
-  --favicon-duckduckgo: url("asset/icons/favicon-duckduckgo.svg");
-  --favicon-google: url("asset/icons/favicon-google.svg");
-  --favicon-yahoo: url("asset/icons/favicon-yahoo.svg");
-  --favicon-yandex: url("asset/icons/favicon-yandex.svg");
-  --faviconSearch: var(--favicon-duckduckgo);
-  filter: invert(0.4);
+#suggestions {
+  background-color: var(--bg);
+  width: 100%;
+  position: absolute;
+  display: none;
+  color: var(--fg);
+  z-index: 1;
+  text-align: left;
+  border-radius: 0 0 var(--bdradius) var(--bdradius);
+  padding-bottom: 15px;
 }
 
-/* COOL FAVICON SEARCH ENGINE */
-#search-favicon::before {
-  content: var(--faviconSearch);
-  display: inline;
-  filter: invert(var(--invert)) grayscale(100%) saturate(1);
+#suggestions hr {
+  margin: 0;
+  margin-bottom: 15px;
+  opacity: 0.5;
 }
 
-#search-favicon {
-  height: 32px;
-  width: 32px;
-  margin: 8px 0px 5px 12px;
-  position: relative;
+#suggestions p {
+  padding-left: 60px;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 10px 10px 60px;
+}
+
+#suggestions p:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 /* Link Table */
@@ -210,7 +252,7 @@ button#clear-field img {
 /* Tabs */
 #tab-container {
   background-color: var(--secondaryBg);
-  border-radius: 0.75em 0.75em 0 0;
+  border-radius: var(--bdradius) vae(--bdradius) 0 0;
 }
 
 .tab {
@@ -226,7 +268,7 @@ button#clear-field img {
 #content-container {
   align-items: flex-start;
   background-color: var(--Bg);
-  border-radius: 0 0 0.75em 0.75em;
+  border-radius: 0 0 var(--bdradius) var(--bdradius);
 }
 
 .content {
@@ -347,7 +389,7 @@ button#clear-field img {
   .tab.active[data-tab^="tab"],
   .tab[data-tab^="tab"]:hover {
     background-color: var(--secondaryBg);
-    border-radius: 0.75rem 0.75rem 0 0;
+    border-radius: var(--bdradius) var(--bdradius) 0 0;
     font-size: 1.5em;
     margin: 0 1%;
     padding: 0.5em;
@@ -381,7 +423,7 @@ button#clear-field img {
 
   .content,
   .content.active {
-    border-radius: 0 0 0.75rem 0.75rem;
+    border-radius: 0 0 var(--bdradius) var(--bdradius);
     display: flex;
     margin: 0 1%;
     width: 24%;

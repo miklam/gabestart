@@ -45,16 +45,18 @@
       </div>
 
       <div id="search">
-        <span id="search-favicon"></span>
-        <input id="search-field" type="text" />
-        <button id="clear-field" onclick="clearField()">
-          <img src="asset/icons/close.svg" alt="clear" />
-        </button>
-        <button id="search-button" onclick="search()">
-          <img src="asset/icons/loupe.svg" alt="Go" />
-        </button>
+        <form id="searchbar" action="https://duckduckgo.com/?search" autocomplete="off" oninput="suggest()" target="_blank">
+            <img id="icon" src="asset/icons/favicon-duckduckgo.svg" alt="DuckDuckGo">
+            <input id="searchInput" type="search" spellcheck="false" name="q" placeholder="Search DuckDuckGo...">
+
+        <input type="button" id="clear-field" onclick="InputBoxReset('searchInput')" value="X" type="reset">
+        </input>
+            <button id="search-button" onclick="search()">
+              <img src="asset/icons/loupe.svg" alt="Go" />
+            </button>
+        </form>
         <div id="suggestions"></div>
-      </div>
+    </div>
 
       <div class="table-container">
         <div class="col-container" id="tab-container">
@@ -87,8 +89,7 @@
         including some elements from
         <a href="https://codepen.io/andyfitz/pen/aZrKdV" target="_blank"
           >The Deep Blue (waves)</a
-        >
-        and distribuited under
+        > and <a href="https://github.com/LentoLen/suggestions" target="_blank">Suggestions</a>.
         <a
           href="https://github.com/gabeweb/gabestart/blob/main/LICENSE"
           target="_blank"
@@ -130,5 +131,6 @@
 
     <script src="config.js"></script>
     <script src="main.js"></script>
+    <script src="scripts/suggestions.js"></script>
   </body>
 </html>

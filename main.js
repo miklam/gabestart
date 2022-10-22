@@ -4,55 +4,9 @@
 // Username
 document.getElementById("username").innerHTML = userName;
 
-// Searchbar
-const searchEngines = {
-  Bing: "https://www.bing.com/search?q=",
-  DuckDuckGo: "https://duckduckgo.com/?q=",
-  Google: "https://www.google.com/search?q=",
-  Yahoo: "https://search.yahoo.com/search?p=",
-  Yandex: "https://yandex.com/search/?text=",
-};
-const searchField = document.getElementById("search-field");
-const clearFieldButton = document.getElementById("clear-field");
-
-if (!Object.keys(searchEngines).includes(searchEngine)) {
-  searchEngine = "Google";
-}
-
-var searchUrl = searchEngines[searchEngine];
-
-searchField.placeholder = "Search " + searchEngine + "...";
-
-// Check searchbar for keystrokes
-searchField.addEventListener("keyup", function (event) {
-  // If there is some text in searchbar, display clear-field button
-  if (searchField.value != "") {
-    clearFieldButton.style.visibility = "visible";
-  } else {
-    clearFieldButton.style.visibility = "hidden";
-  }
-
-  // If last keystroke was "Enter" treat it as search-button is clicked
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("search-button").click();
-  }
-});
-
-// Clear text and keep searchbar in focus
-function clearField() {
-  searchField.value = "";
-  clearFieldButton.style.visibility = "hidden";
-  searchField.focus();
-}
-
-// Search query
-function search() {
-  if (searchField.value != "") {
-    var val = searchField.value;
-    window.open(searchUrl + val, "_blank");
-  }
-  clearField();
+function InputBoxReset(inputID){
+  document.getElementById(inputID).value = '';
+  document.getElementById("suggestions").value = '';
 }
 
 // Show Scrollbar on scrolling
