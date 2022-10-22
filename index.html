@@ -46,11 +46,12 @@
 
       <div id="search">
         <form id="searchbar" action="https://duckduckgo.com/?search" autocomplete="off" oninput="suggest()" target="_blank">
-            <img id="icon" src="asset/icons/favicon-duckduckgo.svg" alt="DuckDuckGo">
-            <input id="searchInput" type="search" spellcheck="false" name="q" placeholder="Search DuckDuckGo...">
 
-        <input type="button" id="clear-field" onclick="InputBoxReset('searchInput')" value="X" type="reset">
-        </input>
+        <span id="search-favicon"></span>
+            <input id="searchInput" spellcheck="false" name="q" placeholder="Search DuckDuckGo...">
+
+        <button id="clear-field" onclick="InputBoxReset('searchInput')" type="reset"><img src="asset/icons/close.svg" alt="Clear" />
+        </button>
             <button id="search-button" onclick="search()">
               <img src="asset/icons/loupe.svg" alt="Go" />
             </button>

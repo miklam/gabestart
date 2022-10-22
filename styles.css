@@ -138,10 +138,28 @@ body {
   padding-left: 20px;
 }
 
-#icon {
-  width: 30px;
-  margin: 0 8px 0 -10px;
+#search-favicon {
+  --favicon-bing: url("asset/icons/favicon-bing.svg");
+  --favicon-duckduckgo: url("asset/icons/favicon-duckduckgo.svg");
+  --favicon-google: url("asset/icons/favicon-google.svg");
+  --favicon-yahoo: url("asset/icons/favicon-yahoo.svg");
+  --favicon-yandex: url("asset/icons/favicon-yandex.svg");
+  --faviconSearch: var(--favicon-duckduckgo);
   filter: invert(0.4);
+}
+
+/* COOL FAVICON SEARCH ENGINE */
+#search-favicon::before {
+  content: var(--faviconSearch);
+  display: inline;
+  filter: invert(var(--invert)) grayscale(100%) saturate(1);
+}
+
+#search-favicon {
+  height: 32px;
+  width: 32px;
+  margin: 10px 6px 5px -8px;
+  position: relative;
 }
 
 #searchInput {
@@ -165,40 +183,24 @@ input:focus {
   padding: 0.75em 0.5em;
 }
 
-#search button img {
+#search button img, input#clear-field img {
   filter: invert(0.7);
   height: 1.2em;
   width: 1.2em;
 }
 
-#search button:hover img {
+#search button:hover img, input#clear-field img {
   filter: invert(var(--invert));
 }
 
-form input:placeholder-shown + input#clear-field {
+form input:placeholder-shown + button#clear-field {
   opacity: 0;
   pointer-events: none;
 }
 
-form input#clear-field {
-  position: absolute;
-  border: none;
-  display: block;
-  width: 18px;
-  height: 18px;
-  line-height: 16px;
-  font-size: 12px;
-  border-radius: 50%;
-  top: 1em;
-  bottom: 1em;
-  right: 3.5em;
-  margin: auto;
-  background: var(--secondaryBg);
-  color: var(--fg);
-  padding: 0;
-  outline: none;
-  cursor: pointer;
-  transition: 0.1s;
+button#clear-field img {
+  height: 0.9em;
+  width: 0.9em;
 }
 
 #suggestions {
