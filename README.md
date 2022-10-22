@@ -56,3 +56,7 @@ var(--yellow)   // or #f1fa8c
 ## Credits
 
 Thanks to [MrAlpha786](https://github.com/MrAlpha786) for the original [GetStarted](https://github.com/MrAlpha786/getstarted) startpage, [RowanFeely](https://github.com/RowanFeely) for [StarterPage](https://github.com/RowanFeely/StarterPage). [Andy Fitzsimon](https://codepen.io/andyfitz) for [the deep blue (waves)](https://codepen.io/andyfitz/pen/aZrKdV) animation and [LentoLen](https://github.com/LentoLen) for [Suggestions](https://github.com/LentoLen/suggestions) script (testing).
+
+---
+
+[more stuff from [GABEweb @ GitHub](https://gabeweb.github.io)]
