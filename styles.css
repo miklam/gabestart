@@ -184,13 +184,15 @@ input:focus {
   padding: 0.75em 0.5em;
 }
 
-#search button img, input#clear-field img {
+#search button img,
+input#clear-field img {
   filter: invert(0.7);
   height: 1.2em;
   width: 1.2em;
 }
 
-#search button:hover img, input#clear-field img {
+#search button:hover img,
+input#clear-field img {
   filter: invert(var(--invert));
 }
 
@@ -561,6 +563,7 @@ span.info-connector {
 }
 
 #playingInfo p.playing-not {
+  font-size: 1.5em;
   animation: scroll-left 30s linear infinite;
   white-space: nowrap;
   overflow: hidden;
@@ -571,7 +574,8 @@ p.playing-not a {
   text-decoration: underline;
 }
 
-#date-time, #time-date {
+#date-time,
+#time-date {
   color: var(--black);
   background-color: var(--cyan);
   padding: 0 0.5em;

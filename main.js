@@ -4,9 +4,9 @@
 // Username
 document.getElementById("username").innerHTML = userName;
 
-function InputBoxReset(inputID){
-  document.getElementById(inputID).value = '';
-  document.getElementById("suggestions").value = '';
+function InputBoxReset(inputID) {
+  document.getElementById(inputID).value = "";
+  document.getElementById("suggestions").value = "";
 }
 
 // Show Scrollbar on scrolling
@@ -79,23 +79,49 @@ for (let i = 0; i < tabs.length; i++) {
 }
 
 // Function to format 1 in 01
-const zeroFill = n => {
-  return ('0' + n).slice(-2);
-}
+const zeroFill = (n) => {
+  return ("0" + n).slice(-2);
+};
 
 // Creates interval
 const interval = setInterval(() => {
   // Get current time
   const now = new Date();
-  const weekday = ['Sun','Mon','Tue','Wed','Thu', 'Fri','Sat'];
-  const month = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  const month = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
 
   // Format date as in mm/dd/aaaa hh:ii:ss
-  const dateTime = ' ' + weekday[now.getDay()] + ' ' + month[now.getMonth()] + ' ' + zeroFill(now.getUTCDate()) + ', ' + now.getFullYear();
-  const timeDate = ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+  const dateTime =
+    " " +
+    weekday[now.getDay()] +
+    " " +
+    month[now.getMonth()] +
+    " " +
+    zeroFill(now.getUTCDate()) +
+    ", " +
+    now.getFullYear();
+  const timeDate =
+    " " +
+    zeroFill(now.getHours()) +
+    ":" +
+    zeroFill(now.getMinutes()) +
+    ":" +
+    zeroFill(now.getSeconds());
 
   // Display the date and time on the screen using div#date-time
-  document.getElementById('date-time').innerHTML = dateTime;
-document.getElementById('time-date').innerHTML = timeDate;
+  document.getElementById("date-time").innerHTML = dateTime;
+  document.getElementById("time-date").innerHTML = timeDate;
 }, 1000);
-
