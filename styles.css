@@ -113,6 +113,10 @@ body {
 }
 
 /* Greeting */
+h1#main_header {
+  text-align: center;
+}
+
 #username {
   background-color: var(--usernameBg);
   border-radius: var(--bdradius);
