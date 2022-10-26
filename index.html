@@ -45,19 +45,34 @@
       </div>
 
       <div id="search">
-        <form id="searchbar" action="https://duckduckgo.com/?search" autocomplete="off" oninput="suggest()" target="_blank">
+        <form
+          id="searchbar"
+          action="https://duckduckgo.com/?search"
+          autocomplete="off"
+          oninput="suggest()"
+          target="_blank"
+        >
+          <span id="search-favicon"></span>
+          <input
+            id="searchInput"
+            spellcheck="false"
+            name="q"
+            placeholder="Search DuckDuckGo..."
+          />
 
-        <span id="search-favicon"></span>
-            <input id="searchInput" spellcheck="false" name="q" placeholder="Search DuckDuckGo...">
-
-        <button id="clear-field" onclick="InputBoxReset('searchInput')" type="reset"><img src="asset/icons/close.svg" alt="Clear" />
-        </button>
-            <button id="search-button" onclick="search()">
-              <img src="asset/icons/loupe.svg" alt="Go" />
-            </button>
+          <button
+            id="clear-field"
+            onclick="InputBoxReset('searchInput')"
+            type="reset"
+          >
+            <img src="asset/icons/close.svg" alt="Clear" />
+          </button>
+          <button id="search-button" onclick="search()">
+            <img src="asset/icons/loupe.svg" alt="Go" />
+          </button>
         </form>
         <div id="suggestions"></div>
-    </div>
+      </div>
 
       <div class="table-container">
         <div class="col-container" id="tab-container">
@@ -78,24 +93,38 @@
       </div>
     </div>
 
+    <script type="text/javascript">
+    </script>
+
     <div class="footer">
       <div id="footer-inner">
-        <a href="https://github.com/gabeweb/gabestart" target="_blank"
-          >GABEstart</a
-        >
-        is a startpage forked from
-        <a href="https://github.com/MrAlpha786/getstarted" target="_blank"
-          >GetStarted</a
-        >
-        including some elements from
-        <a href="https://codepen.io/andyfitz/pen/aZrKdV" target="_blank"
-          >The Deep Blue (waves)</a
-        > and <a href="https://github.com/LentoLen/suggestions" target="_blank">Suggestions</a>.
-        <a
-          href="https://github.com/gabeweb/gabestart/blob/main/LICENSE"
-          target="_blank"
-          >GPL-3.0 license</a
-        >.
+        <div id="hideDiv">
+          <a href="https://github.com/gabeweb/gabestart" target="_blank"
+            >GABEstart</a
+          >
+          is a startpage forked by
+          <a href="https://gabeweb.github.io" target="_blank">GABEweb</a> from
+          <a href="https://github.com/MrAlpha786/getstarted" target="_blank"
+            >GetStarted</a
+          >
+          including some elements from
+          <a href="https://codepen.io/andyfitz/pen/aZrKdV" target="_blank"
+            >The Deep Blue (waves)</a
+          >
+          and
+          <a href="https://github.com/LentoLen/suggestions" target="_blank"
+            >Suggestions</a
+          >.<br />
+          Released under a
+          <a
+            href="https://github.com/gabeweb/gabestart/blob/main/LICENSE"
+            target="_blank"
+            >GPL-3.0 license</a
+          >.
+        </div>
+        <button title="Info" alt="Info" onclick="buttonClicked()">
+          &#9432;
+        </button>
       </div>
     </div>
 

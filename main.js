@@ -125,3 +125,8 @@ const interval = setInterval(() => {
   document.getElementById("date-time").innerHTML = dateTime;
   document.getElementById("time-date").innerHTML = timeDate;
 }, 1000);
+
+// Hide / Show DIV
+function buttonClicked() {
+  $("#hideDiv").toggle();
+}

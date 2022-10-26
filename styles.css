@@ -257,7 +257,7 @@ button#clear-field img {
 /* Tabs */
 #tab-container {
   background-color: var(--secondaryBg);
-  border-radius: var(--bdradius) vae(--bdradius) 0 0;
+  border-radius: var(--bdradius) var(--bdradius) 0 0;
 }
 
 .tab {
@@ -380,8 +380,39 @@ button#clear-field img {
 }
 
 #footer-inner {
-  position: sticky;
+  position: fixed;
   bottom: 1em;
+  right: 1em;
+}
+
+#footer-inner button {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: transparent;
+  font-size: 1.5em;
+  filter: opacity(0.6);
+}
+
+#footer-inner button:hover,
+#footer-inner button:active {
+  filter: opacity(1);
+}
+
+#footer-inner > #hideDiv {
+  display: none;
+  position: fixed;
+  bottom: 46px;
+  right: 10px;
+  width: 80%;
+  max-width: 600px;
+  background: var(--bg);
+  padding: 10px;
+  border-radius: var(--bdradius);
+  filter: opacity(0.9);
+  text-align: right;
 }
 
 /* Screens larger than a average phone */
@@ -531,16 +562,18 @@ div#nowPlaying-container {
 }
 
 div#nowPlaying-container #playingInfo p {
-  margin: 5px;
+  margin: 0px 15px;
 }
 
 #playingInfo p.playing-now,
 #playingInfo p.playing-not {
+  font-size: 1.3em;
   text-transform: uppercase;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 30s linear infinite;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
+  position: relative;
 }
 
 #playingInfo p.playing-now:hover,
@@ -557,14 +590,13 @@ span.titleNowPlaying {
 }
 
 span.info-connector {
+  font-size: 0.75em;
   text-transform: lowercase;
   font-style: italic;
   font-weight: 300;
 }
 
 #playingInfo p.playing-not {
-  font-size: 1.5em;
-  animation: scroll-left 30s linear infinite;
   white-space: nowrap;
   overflow: hidden;
   display: inline-flex;
@@ -585,7 +617,7 @@ p.playing-not a {
 
 @keyframes scroll-left {
   from {
-    transform: translateX(150%);
+    transform: translateX(100%);
   }
 
   to {
@@ -601,7 +633,8 @@ p.playing-not a {
   justify-content: space-between;
   width: 30px;
   height: 20px;
-  margin-bottom: -17px;
+  position: absolute;
+  bottom: 5px;
 }
 
 .bars .bar {
@@ -609,8 +642,8 @@ p.playing-not a {
   animation-iteration-count: infinite;
   animation-name: oscillator;
   animation-timing-function: linear;
-  width: 2px;
-  padding-left: 2px;
+  width: 10px;
+  padding: 3px;
   margin-right: 4px;
   background-color: var(--usernameBg);
 }
