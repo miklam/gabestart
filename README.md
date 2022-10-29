@@ -6,7 +6,7 @@
 
 It has dark ([Dracula](https://draculatheme.com/contribute)-est theme) and website links are customizable.
 
-🎉**Plus:** Match _GABEstart_ with `Dracula X GABE` theme for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/dracula-x-gabe/) 🦊 and [Vivaldi](https://themes.vivaldi.net/themes/P9Xvx24q7Op/versions/3) 🎻.
+🎉**Plus:** Match _GABEstart_ with `Dracula X GABE` theme for [Firefox](https://addons.mozilla.org/en-US/firefox/addon/dracula-x-gabe/) 🦊 and [Vivaldi](https://themes.vivaldi.net/themes/P9Xvx24q7Op) 🎻.
 
 ## Customizations
 
