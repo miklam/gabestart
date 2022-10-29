@@ -655,6 +655,21 @@ p.playing-not a {
   font-weight: bold;
 }
 
+#dottime {
+  color: var(--black);
+  animation: blink 1s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  0% {
+    filter: opacity(0);
+  }
+  100% {
+    filter: opacity(1);
+  }
+}
+
 @keyframes scroll-left {
   from {
     transform: translateX(100%);

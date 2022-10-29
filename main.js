@@ -125,9 +125,9 @@ const interval = setInterval(() => {
   const timeDate =
     " " +
     zeroFill(now.getHours()) +
-    ":" +
+    "<span id='dottime'>:</span>" +
     zeroFill(now.getMinutes()) +
-    ":" +
+    "<span id='dottime'>:</span>" +
     zeroFill(now.getSeconds());
 
   // Display the date and time on the screen using div#date-time
