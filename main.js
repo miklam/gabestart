@@ -5,10 +5,10 @@
 currentTime = new Date();
 //getHour() function will retrieve the hour from current time
 if (currentTime.getHours() < 12)
-  document.getElementById("greeting").innerHTML = "Good Morning ☀️";
+  document.getElementById("greeting").innerHTML = "Good Morning!";
 else if (currentTime.getHours() < 17)
-  document.getElementById("greeting").innerHTML = "Good Afternoon 🌤️";
-else document.getElementById("greeting").innerHTML = "Good Evening 🌙";
+  document.getElementById("greeting").innerHTML = "Good Afternoon!";
+else document.getElementById("greeting").innerHTML = "Good Evening!";
 
 // Username
 document.getElementById("username").innerHTML = userName;

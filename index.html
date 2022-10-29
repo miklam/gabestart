@@ -40,7 +40,11 @@
     <div class="container">
       <h1 id="main_header">
         <span id="greeting"></span>
-        <span id="username" onclick="toggleMode()" *></span>
+        <div id="weather-container">
+          <span id="weather">Loading ... </span>
+          <span><img id="weather-icon" src="" /></span>
+        </div>
+        <span id="username" onclick="toggleMode()"></span>
       </h1>
 
       <div id="nowPlaying-container">
@@ -117,6 +121,8 @@
           <a href="https://github.com/LentoLen/suggestions" target="_blank"
             >Suggestions</a
           >.<br />
+          Weather info from <a href="https://openweathermap.org" >OpenWeatherMap</a> and icons from <a href="https://icons8.com/icon/set/weather/color-glass">Icons8</a>.
+          <br />
           Released under a
           <a
             href="https://github.com/gabeweb/gabestart/blob/main/LICENSE"
@@ -164,5 +170,6 @@
     <script src="config.js"></script>
     <script src="main.js"></script>
     <script src="scripts/suggestions.js"></script>
+    <script src="weather/weather.js"></script>
   </body>
 </html>

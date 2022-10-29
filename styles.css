@@ -117,6 +117,40 @@ h1#main_header {
   text-align: center;
 }
 
+#weather {
+  display: block;
+  position: absolute;
+  top: 26px;
+}
+
+/* Weather */
+#weather-icon {
+  height: 30px;
+  width: 33px;
+  vertical-align: bottom;
+  opacity: 0.6;
+  display: block;
+  position: absolute;
+}
+
+#weather-container {
+  font-size: 0.4em;
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+}
+
+.fade-in-weather {
+  opacity: 1;
+  animation-name: fadeInWeatherOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
 #username {
   background-color: var(--usernameBg);
   border-radius: var(--bdradius);
@@ -411,6 +445,8 @@ button#clear-field img {
   bottom: 46px;
   right: 10px;
   width: 80%;
+  font-size: 0.9em;
+  font-weight: 300;
   max-width: 600px;
   background: var(--bg);
   padding: 10px;
