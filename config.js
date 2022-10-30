@@ -70,6 +70,7 @@ var cards = [
 			"Dribbble": "https://dribbble.com",
 			"Ello": "https://ello.co",
 			"Last.fm": "https://last.fm",
+			"Plex": "https://watch.plex.tv",
 			"Pluto TV": "https://pluto.tv",
 			"Runtime": "https://runtime.tv",
 			"Spotify": "https://open.spotify.com",
