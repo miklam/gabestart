@@ -70,6 +70,7 @@ App = {
           var weatherDescription = json.weather[0].description;
           var weatherIcon = App.getWeatherIcon(json.weather[0].icon);
           if (weatherIcon) {
+            document.getElementById("weather-container").title = weatherDescription;
             document.getElementById("weather").innerHTML = temp;
             document.getElementById("weather-icon").src = weatherIcon;
           } else {
