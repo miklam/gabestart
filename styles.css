@@ -713,10 +713,16 @@ span.info-connector {
 
 #dottime {
   color: var(--black);
-  animation: blink 1s infinite;
-  -webkit-animation: blink 1s infinite;
-  animation-direction: alternate;
-  -webkit-animation-direction: alternate;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-direction: linear;
+  animation-iteration-count: infinite;
+  animation-delay: -0.5s;
+  -webkit-animation-name: blink;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-direction: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: -0.5s;
 }
 
 @-webkit-keyframes blink {
