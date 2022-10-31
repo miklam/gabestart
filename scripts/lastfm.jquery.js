@@ -3,7 +3,7 @@
 simple last.fm jQuery plugin
 shows recently played tracks
 
-Athor: Ringo Rohe
+Author: Ringo Rohe
        - with much help from Douglas Neiner
 
 
@@ -125,7 +125,7 @@ $('#nowPlayingBox').nowplaying({
 
           html =
             html +
-            '<span class="titleNowPlaying">Now Playing:<br></span>' +
+            "</span>" +
             '<p class="playing-now"><object class="bars"><button class="bar bar1" /><button class="bar bar2" /><button class="bar bar3" /></object><span class="playing-info"><span class="track">' +
             track.name +
             "</span>" +
