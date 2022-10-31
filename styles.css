@@ -3,7 +3,12 @@
 
 @font-face {
   font-family: "IBM Plex Mono";
-  src: url("asset/fonts/IBMPlexMono-Regular.ttf");
+  src: url("asset/fonts/IBM Plex Mono/IBMPlexMono-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Monocraft";
+  src: url("asset/fonts/Monocraft/Monocraft.otf");
 }
 
 /* TODO: Create Custom Theme Template to be imported */
@@ -25,7 +30,9 @@
   --white: #f8f8f2;
   --yellow: #f1fa8c;
 
-  --fontFamily: "IBM Plex Mono", monospace;
+  --fontBody: "IBM Plex Mono", "Menlo", "DejaVu Sans Mono",
+    "Bitstream Vera Sans Mono", Courier, monospace;
+  --fontHeader: "Monocraft", monospace;
   --invert: 1;
   /* In light mode is vice-versa */
   --scrollbar: var(--accentColor);
@@ -62,6 +69,7 @@
 body {
   background-color: var(--bg);
   margin: 0;
+  font-family: var(--fontBody);
 }
 
 * {
@@ -70,7 +78,6 @@ body {
   border: 0;
   box-sizing: border-box;
   color: var(--fg);
-  font-family: var(--fontFamily);
   outline-style: none;
   scrollbar-color: #00000000 #00000000;
   scrollbar-width: thin;
@@ -115,6 +122,7 @@ body {
 /* Greeting */
 h1#main_header {
   text-align: center;
+  font-family: var(--fontHeader);
 }
 
 #weather {
@@ -127,7 +135,6 @@ h1#main_header {
 #weather-icon {
   height: 30px;
   width: 33px;
-  vertical-align: bottom;
   opacity: 0.6;
   display: block;
   position: absolute;
@@ -157,6 +164,36 @@ h1#main_header {
   color: var(--usernameFg);
   /*cursor: pointer;*/
   padding: 0 0.5em;
+}
+
+/* Vertical scroll box */
+
+#vertical-scroll-box {
+  position: relative;
+  display: block;
+  max-width: 720px;
+  width: 85%;
+}
+
+.vertical-scroll-box {
+  height: 30px;
+  line-height: 32px;
+  overflow: Hidden;
+  padding: 0px;
+  font-size: 1.5em;
+}
+
+.vertical-scroll-box ul,
+.vertical-scroll-box > li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.vertical-scroll-box .item-1 {
+  animation: scroll-left 30s linear infinite;
+  -webkit-animation: scroll-left 30s linear infinite;
 }
 
 /* SEARCH REVAMPED */
@@ -547,6 +584,7 @@ button#clear-field img {
 
 .parallax > use {
   animation: move-forever 30s linear infinite;
+  -webkit-animation: move-forever 30s linear infinite;
   fill: var(--accentColor);
 }
 
@@ -565,6 +603,16 @@ button#clear-field img {
   animation-delay: -4s;
   animation-duration: 5s;
   opacity: 0.5;
+}
+
+@-webkit-keyframes move-forever {
+  0% {
+    transform: translate(-90px, 0%);
+  }
+
+  100% {
+    transform: translate(85px, 0%);
+  }
 }
 
 @keyframes move-forever {
@@ -606,10 +654,11 @@ div#nowPlaying-container #playingInfo p {
 }
 
 #playingInfo p.playing-now,
-#playingInfo p.playing-not {
-  font-size: 1.3em;
+#playingInfo .playing-not {
+  font-size: 1.1em;
   text-transform: uppercase;
   animation: scroll-left 30s linear infinite;
+  -webkit-animation: scroll-left 30s linear infinite;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
@@ -617,12 +666,13 @@ div#nowPlaying-container #playingInfo p {
 }
 
 #playingInfo p.playing-now:hover,
-#playingInfo p.playing-not:hover {
+#playingInfo .playing-not:hover {
   animation-play-state: paused;
 }
 
 span.titleNowPlaying {
   animation: none !important;
+  -webkit-animation: none !important;
   text-transform: lowercase;
   font-style: italic;
   display: block;
@@ -630,19 +680,25 @@ span.titleNowPlaying {
 }
 
 span.info-connector {
-  font-size: 0.75em;
+  font-size: 0.65em;
   text-transform: lowercase;
   font-style: italic;
   font-weight: 300;
+  margin-bottom: 0.1em;
 }
 
 #playingInfo p.playing-not {
   white-space: nowrap;
   overflow: hidden;
   display: inline-flex;
+  text-transform: lowercase;
+  color: var(--green);
+  padding: 0 0.5em;
+  margin: 0 0.75em;
+  font-weight: bold;
 }
 
-p.playing-not a {
+.playing-not a {
   text-decoration: underline;
 }
 
@@ -658,18 +714,36 @@ p.playing-not a {
 #dottime {
   color: var(--black);
   animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite;
   animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    filter: opacity(0);
+  }
+
+  100% {
+    filter: opacity(1);
+  }
 }
 
 @keyframes blink {
   0% {
     filter: opacity(0);
   }
+
   100% {
     filter: opacity(1);
   }
 }
 
+@-webkit-keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+}
 @keyframes scroll-left {
   from {
     transform: translateX(100%);
@@ -687,7 +761,7 @@ p.playing-not a {
   display: flex;
   justify-content: space-between;
   width: 30px;
-  height: 20px;
+  height: 24px;
   position: absolute;
   bottom: 5px;
 }
@@ -713,6 +787,18 @@ p.playing-not a {
 
 .bars .bar.bar3 {
   animation-duration: 200ms;
+}
+
+@-webkit-keyframes oscillator {
+  0% {
+    height: 20%;
+    opacity: 0.5;
+  }
+
+  to {
+    height: 100%;
+    opacity: 1;
+  }
 }
 
 @keyframes oscillator {

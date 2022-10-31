@@ -30,7 +30,7 @@
           username: "gabeweb",
           refresh: 60,
           notplayingtext:
-            '<p class="playing-not"><span>in case you missed it today is</span><span id="date-time"></span><span></span>and the current time is<span id="time-date"></span></p>',
+            '<p class="playing-not"><span style="animation: blink 1s infinite; animation-direction: alternate; color: var(--green);">//</span> Not scrobbling yet...</p>',
         });
       }); /*]]>*/
     </script>
@@ -47,8 +47,18 @@
         <span id="username" onclick="toggleMode()"></span>
       </h1>
 
-      <div id="nowPlaying-container">
-        <div id="playingInfo"></div>
+      <div id="vertical-scroll-box">
+        <div class="vertical-scroll-box">
+          <ul>
+            <li class="item-1"><span id="date-time"></span></li>
+            <li class="item-2"><span id="time-date"></span></li>
+            <li class="item-3">
+              <div id="nowPlaying-container">
+                <span id="playingInfo"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div id="search">
@@ -116,12 +126,24 @@
           including some elements from
           <a href="https://codepen.io/andyfitz/pen/aZrKdV" target="_blank"
             >The Deep Blue (waves)</a
-          >
-          and
+          >,
           <a href="https://github.com/LentoLen/suggestions" target="_blank"
             >Suggestions</a
+          >
+          and
+          <a
+            href="https://github.com/FrankFan/jQuery.scrollText.js"
+            target="_blank"
+            >jQuery.scrollText.js</a
           >.<br />
-          Weather info from <a href="https://openweathermap.org" >OpenWeatherMap</a> and icons from <a href="https://icons8.com/icon/set/weather/color-glass">Icons8</a>.
+          Weather info from
+          <a href="https://openweathermap.org">OpenWeatherMap</a>,icons from
+          <a href="https://icons8.com/icon/set/weather/color-glass">Icons8</a>
+          and fonts are
+          <a href="https://github.com/IBM/plex" target="_blank">IBM Plex</a> and
+          <a href="https://github.com/IdreesInc/Monocraft" target="_blank"
+            >Monocraft</a
+          >.
           <br />
           Released under a
           <a
@@ -170,6 +192,16 @@
     <script src="config.js"></script>
     <script src="main.js"></script>
     <script src="scripts/suggestions.js"></script>
+    <script src="scripts/jqyery.scrolltext.js"></script>
+
+    <script type="text/javascript">
+      $(function () {
+        $(".vertical-scroll-box").scrollText({
+          duration: 20000,
+        });
+      });
+    </script>
+
     <script src="weather/weather.js"></script>
   </body>
 </html>

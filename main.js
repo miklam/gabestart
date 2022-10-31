@@ -13,6 +13,7 @@ else document.getElementById("greeting").innerHTML = "Good Evening!";
 // Username
 document.getElementById("username").innerHTML = userName;
 
+// Suggestions
 function InputBoxReset(inputID) {
   document.getElementById(inputID).value = "";
   document.getElementById("suggestions").value = "";
@@ -87,6 +88,7 @@ for (let i = 0; i < tabs.length; i++) {
   });
 }
 
+// Date and Time
 // Function to format 1 in 01
 const zeroFill = (n) => {
   return ("0" + n).slice(-2);

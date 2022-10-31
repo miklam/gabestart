@@ -75,9 +75,18 @@ var(--yellow)   // or #f1fa8c
 
 ## Credits
 
-Thanks to [MrAlpha786](https://github.com/MrAlpha786) for the original [GetStarted](https://github.com/MrAlpha786/getstarted) startpage, [RowanFeely](https://github.com/RowanFeely) for [StarterPage](https://github.com/RowanFeely/StarterPage). [Andy Fitzsimon](https://codepen.io/andyfitz) for [the deep blue (waves)](https://codepen.io/andyfitz/pen/aZrKdV) animation and [LentoLen](https://github.com/LentoLen) for [Suggestions](https://github.com/LentoLen/suggestions) script (testing).
+This page is made possible thanks to:
 
-Weather info from [OpenWeatherMap](https://openweathermap.org) and weather icons from [Icons8](https://icons8.com/icon/set/weather/color-glass).
+- [MrAlpha786](https://github.com/MrAlpha786) for the original [GetStarted](https://github.com/MrAlpha786/getstarted) startpage.
+- [RowanFeely](https://github.com/RowanFeely) for [StarterPage](https://github.com/RowanFeely/StarterPage).
+- [Andy Fitzsimon](https://codepen.io/andyfitz) for [the deep blue (waves)](https://codepen.io/andyfitz/pen/aZrKdV) animation.
+- [LentoLen](https://github.com/LentoLen) for [Suggestions](https://github.com/LentoLen/suggestions) script (under testing).
+- [FrankFan](https://github.com/FrankFan) for [jQuery.scrollText.js](href="https://github.com/FrankFan/jQuery.scrollText.js) script.
+- [mmoss](https://github.com/mmoss) for [Last.fm jQuery Plugin](https://github.com/mmoss/jquery-lastfm) (refactored).
+- [OpenWeatherMap](https://openweathermap.org) for weather info.
+- [Icons8](https://icons8.com/icon/set/weather/color-glass) for icons.
+- [IBM](https://github.com/IBM) for [IBM Plex](https://github.com/IBM/plex) font.
+- [IdreesInc](https://github.com/IdreesInc) for [Monocraft](https://github.com/IdreesInc/Monocraft) font.
 
 ---
 
