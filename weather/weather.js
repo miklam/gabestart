@@ -60,7 +60,7 @@ App = {
     /* OPEN WEATHER MAP */
     xhr.open(
       "GET",
-      "https://api.openweathermap.org/data/2.5/weather?q=Cabimas,Venezuela&appid=dba306998ebe631bfd796148d0ff7a9b&units=metric"
+      "https://api.openweathermap.org/data/2.5/weather?q=2694522&appid=41fe2a5345bfe03e60cea34d6e79f498&units=metric"
     );
     xhr.onload = () => {
       if (xhr.readyState === 4) {
