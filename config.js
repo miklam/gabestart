@@ -1,5 +1,5 @@
 // Username displayed in greeting.
-var userName = "gabeweb";
+var userName = "Mikael";
 
 // Cards
 var cards = [
@@ -36,7 +36,8 @@ var cards = [
 			"Google Keep": "https://keep.google.com/",
 			"Google Drive": "https://drive.google.com",
 			"Google Calendar": "https://calendar.google.com/calendar/",
-			"OneDrive": "https://onedrive.com"
+			"OneDrive": "https://onedrive.com",
+			"Temp Mail": "https://temp-mail.org/en"
 		}
 	},
 	{
