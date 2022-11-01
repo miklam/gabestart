@@ -15,20 +15,20 @@
 /* Colors and other var*/
 :root {
   /* GLOBAL  COLORS  */
-  --bg: #282a36;
-  --fg: #f8f8f2;
+  --bg: #1e1e2e;
+  --fg: #cdd6f4;
 
-  --secondaryBg: rgba(68, 71, 90, .85);
+  --secondaryBg: rgba(24, 24, 37, .85);
 
-  --black: #282a36;
-  --blue: rgb(98, 114, 164);
-  --cyan: #8be9fd;
-  --green: #50fa7b;
-  --orange: #ffb86c;
-  --purple: #9580ff;
-  --red: #ff5555;
-  --white: #f8f8f2;
-  --yellow: #f1fa8c;
+  --black: #1e1e2e;
+  --blue: #89b4fa;
+  --cyan: #94e2d5;
+  --green: #a6e3a1;
+  --orange: #fab387;
+  --purple: #cba6f7;
+  --red: #f38ba8;
+  --white: #cdd6f4;
+  --yellow: #f9e2af;
 
   --fontBody: "IBM Plex Mono", "Menlo", "DejaVu Sans Mono",
     "Bitstream Vera Sans Mono", Courier, monospace;
@@ -45,7 +45,7 @@
 
   --usernameBg: var(--accentColor);
   /* In light mode is vice-versa */
-  --usernameFg: #282a36;
+  --usernameFg: #1e1e2e;
 
   --bdradius: 0.75em;
 }
@@ -53,16 +53,16 @@
 /* @media (prefers-color-scheme: dark) {
   :root,
   .dark-mode {
-    --bg: #282a36;
-    --fg: #f8f8f2;
+    --bg: #1e1e2e;
+    --fg: #cdd6f4;
 
     --secondaryBg: #44475a;
 
-    --black: #282a36;
+    --black: #1e1e2e;
     --invert: 1;
 
     --usernameBg: var(--accentColor);
-    --usernameFg: #282a36;
+    --usernameFg: #1e1e2e;
   }
 } */
 
