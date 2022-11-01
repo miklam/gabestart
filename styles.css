@@ -18,7 +18,7 @@
   --bg: #282a36;
   --fg: #f8f8f2;
 
-  --secondaryBg: #44475a;
+  --secondaryBg: rgba(68, 71, 90, .85);
 
   --black: #282a36;
   --blue: rgb(98, 114, 164);
@@ -243,6 +243,7 @@ h1#main_header {
   flex-grow: 2;
   border: none;
   background-color: transparent;
+  font-family: var(--fontBody);
   font-size: 1.1em;
   color: inherit;
 }
