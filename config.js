@@ -4,104 +4,60 @@ var userName = "gabeweb";
 // Cards
 var cards = [
 	{
-		name: "Email",
-		bookmarks: {
-			"Aol Mail": "https://mail.aol.com",
-			"Google Mail": "https://mail.google.com",
-			"OnMail": "https://mail.onmail.com",
-			"Outlook": "https://mail.live.com",
-			"Proton Mail": "https://mail.proton.me",
-			"Yahoo Mail": "https://mail.yahoo.com",
-			"Yandex Mail": "https://mail.yandex.com"
-		}
-	},
-	{
-		name: "News",
-		bookmarks: {
-			"AP News":"https://apnews.com",
-			"Ars Technica": "https://arstechnica.com",
-			"BBC News": "https://bbc.com",
-			"Boing Boing": "https://boingboing.net",
-			"CNET": "https://cnet.com",
-			"Consequence": "https://consequence.net",
-			"Digg": "https://digg.com",
-			"Forbes": "https://forbes.com",
-			"Mashable": "https://mashable.com",
-			"Newsweek":"https://newsweek.com",
-			"NY Times": "https://nytimes.com",
-			"NPR": "https://npr.org",
-			"Pitchfork": "https://pitchfork.com",
-			"Quartz":"https://qz.com",
-			"Reuters":"https://reuters.com",
-			"The Guardian":"https://theguardian.com",
-			"The Verge": "https://theverge.com",
-			"TIME":"https://time.com",
-			"TNW": "https://thenextweb.com",
-			"Vox":"https://vox.com",
-			"XDA": "https://xda-developers.com",
-			"ZDNET": "https://zdnet.com"
-		}
-	},
-	{
 		name: "Social",
 		bookmarks: {
-			"DEV": "https://dev.to",
-			"Discord": "https://discordapp.com",
 			"Facebook": "https://facebook.com",
-			"Hashnode": "https://hashnode.com",
 			"Instagram": "https://instagram.com/?theme=dark",
-			"Messenger": "https://messenger.com",
-			"Quora": "https://quora.com",
 			"Reddit": "https://reddit.com",
-			"Stack Exchange": "https://stackexchange.com",
-			"Telegram": "https://web.telegram.org",
-			"Tumblr": "https://tumblr.com",
-			"Twitter": "https://twitter.com",
-			"VK": "https://vk.com",
-			"WhatsApp": "https://web.whatsapp.com"
+			"WhatsApp": "https://web.whatsapp.com",
+			"Facebook Messenger": "https://messenger.com",
+			"Google Messages": "https://messages.google.com/web/conversations"
 		}
 	},
 	{
-		name: "Media",
+		name: "Fun",
 		bookmarks: {
-			"Behance": "https://behance.net",
-			"Crumchyroll": "https://crunchyroll.com",
-			"Deviantart": "https://deviantart.com",
-			"Dribbble": "https://dribbble.com",
-			"Ello": "https://ello.co",
-			"Last.fm": "https://last.fm",
-			"Plex": "https://watch.plex.tv",
-			"Pluto TV": "https://pluto.tv",
-			"Runtime": "https://runtime.tv",
-			"Spotify": "https://open.spotify.com",
-			"Trakt.tv": "https://trakt.tv",
-			"YouTube": "https://youtube.com",
-			"YouTube Music": "https://music.youtube.com"
+			"YouTube": "https://www.youtube.com/feed/subscriptions",
+			"Disney+": "https://www.disneyplus.com/en-gb/home",
+			"Crunchyroll": "https://crunchyroll.com",
+			"Last FM": "https://www.last.fm",
+			"D&D Beyond": "https://www.dndbeyond.com/characters",
+			"Foundry": "https://forge-vtt.com/game/webbysweirdandwigglytale",
+			"Garmin Connect": "https://connect.garmin.com/modern/",
+			"Strava": "https://www.strava.com/dashboard",
+			"Smashrun": "https://smashrun.com/miklam"
 		}
 	},
 	{
-		name: "Tools",
+		name: "Cloud",
 		bookmarks: {
-			"Bitwarden": "https://vault.bitwarden.com",
-			"Coda": "https://coda.io",
-			"Dropbox": "https://dropbox.com",
-			"Figma": "https://figma.com",
-			"GitHub": "https://github.com",
-			"Google Docs": "https://docs.google.com",
+			"Proton Mail": "https://mail.proton.me",
+			"Gmail": "https://mail.google.com",
+			"Google Keep": "https://keep.google.com/",
 			"Google Drive": "https://drive.google.com",
-			"Google Keep": "https://keep.google.com",
-			"Google Passwords": "https://passwords.google.com",
-			"Google Translate": "https://translate.google.com",
-			"KeeWeb": "https://app.keeweb.info",
-			"Microsoft To Do": "https://to-do.live.com/tasks/",
-			"Notion": "https://notion.so",
-			"Office 365": "https://office.com",
-			"OneDrive": "https://onedrive.com",
-			"Photopea": "https://photopea.com",
-			"VSCode": "https://vscode.dev",
-			"Vectr": "https://vectr.comm",
-			"Write.as": "https://write.as",
-			"Yandex Disk": "https://disk.yandex.com"
+			"Google Calendar": "https://calendar.google.com/calendar/",
+			"OneDrive": "https://onedrive.com"
+		}
+	},
+	{
+		name: "Money",
+		bookmarks: {
+			"Swedbank": "https://online.swedbank.se/app/ib/logga-in",
+			"Budget 2022": "https://docs.google.com/spreadsheets/d/1a264-P2lX6FLSVOCJ-Xn_ZmtcP8Vd8ziAQgh4p67vA8/edit#gid=973217484",
+			"Budget Input": "https://docs.google.com/forms/d/e/1FAIpQLSeh1aHhLTdUTo5hOi94HVK8ls5BuoUF2S845ZI2YACT52pxyQ/viewform",
+			"PayPal": "https://www.paypal.com/se/home",
+			"Wise": "https://wise.com/"
+		}
+	},
+	{
+		name: "Other",
+		bookmarks: {
+			"FOGIS": "https://fogis.svenskfotboll.se/Fogisdomarklient/Login/Login.aspx",
+			"Prisjakt": "https://www.prisjakt.nu/",
+			"Pricerunner": "https://www.pricerunner.se/",
+			"Blocket": "https://www.blocket.se/",
+			"GitHub": "https://github.com",
+			"Obsidian": "https://forum.obsidian.md/"
 		}
 	}
 ]
