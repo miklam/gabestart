@@ -59,7 +59,8 @@ var cards = [
 			"Blocket": "https://www.blocket.se/",
 			"GitHub": "https://github.com",
 			"Obsidian Forum": "https://forum.obsidian.md/",
-			"Kivra": "https://accounts.kivra.com/?locale=sv"
+			"Kivra": "https://accounts.kivra.com/?locale=sv",
+			"Marks Bostad": "https://marknad.marksbostadsab.se/pgClientStart.aspx"
 		}
 	}
 ]
