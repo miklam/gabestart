@@ -58,7 +58,8 @@ var cards = [
 			"Pricerunner": "https://www.pricerunner.se/",
 			"Blocket": "https://www.blocket.se/",
 			"GitHub": "https://github.com",
-			"Obsidian": "https://forum.obsidian.md/"
+			"Obsidian Forum": "https://forum.obsidian.md/",
+			"Kivra": "https://accounts.kivra.com/?locale=sv"
 		}
 	}
 ]
