@@ -60,6 +60,7 @@ var cards = [
 			"GitHub": "https://github.com",
 			"Obsidian Forum": "https://forum.obsidian.md/",
 			"Kivra": "https://accounts.kivra.com/?locale=sv",
+			"Julklappslek 2022": "https://www.drawnames.com/secret-santa-generator/overview/pg7GqRXs6z6v4Sw1Wjp9-A-/ABUyfuOHcGihicUdzJo-kg-",
 			"Marks Bostad": "https://marknad.marksbostadsab.se/pgClientStart.aspx"
 		}
 	}
