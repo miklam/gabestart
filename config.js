@@ -57,8 +57,10 @@ var cards = [
 			"Prisjakt": "https://www.prisjakt.nu/",
 			"Pricerunner": "https://www.pricerunner.se/",
 			"Blocket": "https://www.blocket.se/",
+			"Inet": "https://www.inet.se/",
 			"GitHub": "https://github.com",
 			"Obsidian Forum": "https://forum.obsidian.md/",
+			"Google Maps": "https://www.google.se/maps",
 			"Kivra": "https://accounts.kivra.com/?locale=sv",
 			"Julklappslek 2022": "https://www.drawnames.com/secret-santa-generator/overview/pg7GqRXs6z6v4Sw1Wjp9-A-/ABUyfuOHcGihicUdzJo-kg-",
 			"Marks Bostad": "https://marknad.marksbostadsab.se/pgClientStart.aspx"
