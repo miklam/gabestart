@@ -20,6 +20,7 @@ var cards = [
 			"YouTube": "https://www.youtube.com/feed/subscriptions",
 			"Disney+": "https://www.disneyplus.com/en-gb/home",
 			"Crunchyroll": "https://crunchyroll.com",
+			"Amazon Prime": "https://www.primevideo.com/gp/video/storefront?filterId=OFFER_FILTER=PRIME",
 			"Last FM": "https://www.last.fm",
 			"D&D Beyond": "https://www.dndbeyond.com/characters",
 			"Foundry": "https://forge-vtt.com/game/webbysweirdandwigglytale",
