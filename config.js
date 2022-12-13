@@ -20,7 +20,6 @@ var cards = [
 			"YouTube": "https://www.youtube.com/feed/subscriptions",
 			"Disney+": "https://www.disneyplus.com/en-gb/home",
 			"Crunchyroll": "https://crunchyroll.com",
-			"Amazon Prime": "https://www.primevideo.com/region/eu/mystuff/watchlist/ref=atv_nb_wtl",
 			"Last FM": "https://www.last.fm",
 			"D&D Beyond": "https://www.dndbeyond.com/characters",
 			"Foundry": "https://forge-vtt.com/game/webbysweirdandwigglytale",
@@ -63,6 +62,7 @@ var cards = [
 			"Obsidian Forum": "https://forum.obsidian.md/",
 			"Google Maps": "https://www.google.se/maps",
 			"Kivra": "https://accounts.kivra.com/?locale=sv",
+			"Försäkringskassan": "https://www.forsakringskassan.se/logga-in#/",
 			"Julklappslek 2022": "https://www.drawnames.com/secret-santa-generator/overview/pg7GqRXs6z6v4Sw1Wjp9-A-/ABUyfuOHcGihicUdzJo-kg-",
 			"Marks Bostad": "https://marknad.marksbostadsab.se/pgClientStart.aspx"
 		}
