@@ -63,7 +63,6 @@ var cards = [
 			"Google Maps": "https://www.google.se/maps",
 			"Kivra": "https://accounts.kivra.com/?locale=sv",
 			"Försäkringskassan": "https://www.forsakringskassan.se/logga-in#/",
-			"Julklappslek 2022": "https://www.drawnames.com/secret-santa-generator/overview/pg7GqRXs6z6v4Sw1Wjp9-A-/ABUyfuOHcGihicUdzJo-kg-",
 			"Marks Bostad": "https://marknad.marksbostadsab.se/pgClientStart.aspx"
 		}
 	}
