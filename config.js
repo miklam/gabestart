@@ -44,10 +44,12 @@ var cards = [
 		name: "Money",
 		bookmarks: {
 			"Swedbank": "https://online.swedbank.se/app/ib/logga-in",
-			"Budget 2022": "https://docs.google.com/spreadsheets/d/1a264-P2lX6FLSVOCJ-Xn_ZmtcP8Vd8ziAQgh4p67vA8/edit#gid=973217484",
-			"Budget Input": "https://docs.google.com/forms/d/e/1FAIpQLSeh1aHhLTdUTo5hOi94HVK8ls5BuoUF2S845ZI2YACT52pxyQ/viewform",
+			"Budget 2023": "https://docs.google.com/spreadsheets/d/1Yy_2coAWr0j4Jo187y_QttZgde9Jpc702wbvc_MossA/edit?usp=sharing",
+			"Budget Input 2023": "https://docs.google.com/forms/d/e/1FAIpQLSfmOptSVyokvc2ImOeTieQPpSdDPkl2HlL1cVCA58RfqambBA/viewform?usp=sf_link",
 			"PayPal": "https://www.paypal.com/se/home",
-			"Wise": "https://wise.com/"
+			"Wise": "https://wise.com/",
+			"Budget 2022": "https://docs.google.com/spreadsheets/d/1a264-P2lX6FLSVOCJ-Xn_ZmtcP8Vd8ziAQgh4p67vA8/edit#gid=973217484",
+			"Budget Input 2022": "https://docs.google.com/forms/d/e/1FAIpQLSeh1aHhLTdUTo5hOi94HVK8ls5BuoUF2S845ZI2YACT52pxyQ/viewform"
 		}
 	},
 	{
