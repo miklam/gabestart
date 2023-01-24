@@ -18,7 +18,6 @@ var cards = [
 		name: "Fun",
 		bookmarks: {
 			"YouTube": "https://www.youtube.com/feed/subscriptions",
-			"Disney+": "https://www.disneyplus.com/en-gb/home",
 			"Crunchyroll": "https://crunchyroll.com",
 			"Last FM": "https://www.last.fm",
 			"D&D Beyond": "https://www.dndbeyond.com/characters",
@@ -48,8 +47,6 @@ var cards = [
 			"Budget Input 2023": "https://docs.google.com/forms/d/e/1FAIpQLSfmOptSVyokvc2ImOeTieQPpSdDPkl2HlL1cVCA58RfqambBA/viewform?usp=sf_link",
 			"PayPal": "https://www.paypal.com/se/home",
 			"Wise": "https://wise.com/",
-			"Budget 2022": "https://docs.google.com/spreadsheets/d/1a264-P2lX6FLSVOCJ-Xn_ZmtcP8Vd8ziAQgh4p67vA8/edit#gid=973217484",
-			"Budget Input 2022": "https://docs.google.com/forms/d/e/1FAIpQLSeh1aHhLTdUTo5hOi94HVK8ls5BuoUF2S845ZI2YACT52pxyQ/viewform",
 			"Länsförsäkringar": "https://www.lansforsakringar.se/alvsborg/privat/"
 		}
 	},
