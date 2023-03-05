@@ -47,7 +47,9 @@ var cards = [
 			"Budget Input 2023": "https://docs.google.com/forms/d/e/1FAIpQLSfmOptSVyokvc2ImOeTieQPpSdDPkl2HlL1cVCA58RfqambBA/viewform?usp=sf_link",
 			"PayPal": "https://www.paypal.com/se/home",
 			"Wise": "https://wise.com/",
-			"Länsförsäkringar": "https://www.lansforsakringar.se/alvsborg/privat/"
+			"Länsförsäkringar": "https://www.lansforsakringar.se/alvsborg/privat/",
+			"Vattenfall": "https://accounts.vattenfall.se/iamng/seb2c/sales/web/#/home-login?client_id=ALqiYzRolhQdSI3R7e5SxzWdb3Ya&commonAuthCallerPath=%2Foauth2%2Fauthorize&fidp=MinaSidorPrimaryIDP&forceAuth=false&passiveAuth=false&redirect_uri=https:%2F%2Fwww.vattenfall.se%2Flogin%2Fauthcallback&response_type=code&scope=openid&state=SVvZWNDBo4GYnK9hT8kcwdO2Fu9oqzBg9ZIZz4WUrtfpEOw71m&tenantDomain=se.b2c&sessionDataKey=6ed544e7-bcf9-45c4-a378-14d444fcadb7&relyingParty=ALqiYzRolhQdSI3R7e5SxzWdb3Ya&type=oidc&sp=MinaSidorSALESPrimarySP&isSaaSApp=false&authenticators=SEB2CPrimaryAuthenticator",
+			"Försäkringskassan": "https://www.forsakringskassan.se/logga-in#/"
 		}
 	},
 	{
@@ -59,12 +61,11 @@ var cards = [
 			"Blocket": "https://www.blocket.se/",
 			"Inet": "https://www.inet.se/",
 			"GitHub": "https://github.com",
-			"Obsidian Forum": "https://forum.obsidian.md/",
 			"Google Maps": "https://www.google.se/maps",
 			"Kivra": "https://accounts.kivra.com/?locale=sv",
 			"Marks Kommun": "https://fs.mark.se/adfs/ls?version=1.0&action=signin&realm=urn%3AAppProxy%3Acom&appRealm=665f73f4-bff3-e611-80de-00155dc13b1a&returnUrl=https%3A%2F%2Fhome2.mark.se%2F&client-request-id=9162370E-1B41-0001-0A7C-6391411BD901",
-			"Försäkringskassan": "https://www.forsakringskassan.se/logga-in#/",
-			"Marks Bostad": "https://marknad.marksbostadsab.se/pgClientStart.aspx"
+			"Marks Bostad": "https://www.marksbostadsab.se/",
+			"MB Marknad": "https://marknad.marksbostadsab.se/pgClientStart.aspx"
 		}
 	}
 ]
