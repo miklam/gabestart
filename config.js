@@ -48,7 +48,8 @@ var cards = [
 			"PayPal": "https://www.paypal.com/se/home",
 			"Wise": "https://wise.com/",
 			"Länsförsäkringar": "https://www.lansforsakringar.se/alvsborg/privat/",
-			"Vattenfall": "https://accounts.vattenfall.se/iamng/seb2c/sales/web/#/home-login?client_id=ALqiYzRolhQdSI3R7e5SxzWdb3Ya&commonAuthCallerPath=%2Foauth2%2Fauthorize&fidp=MinaSidorPrimaryIDP&forceAuth=false&passiveAuth=false&redirect_uri=https:%2F%2Fwww.vattenfall.se%2Flogin%2Fauthcallback&response_type=code&scope=openid&state=SVvZWNDBo4GYnK9hT8kcwdO2Fu9oqzBg9ZIZz4WUrtfpEOw71m&tenantDomain=se.b2c&sessionDataKey=6ed544e7-bcf9-45c4-a378-14d444fcadb7&relyingParty=ALqiYzRolhQdSI3R7e5SxzWdb3Ya&type=oidc&sp=MinaSidorSALESPrimarySP&isSaaSApp=false&authenticators=SEB2CPrimaryAuthenticator",
+			"Vattenfall": "https://www.vattenfall.se/",
+			"Bredband2": "https://www.bredband2.com/",
 			"Försäkringskassan": "https://www.forsakringskassan.se/logga-in#/"
 		}
 	},
