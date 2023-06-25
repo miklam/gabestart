@@ -35,6 +35,7 @@ var cards = [
 			"Google Keep": "https://keep.google.com/",
 			"Google Drive": "https://drive.google.com",
 			"Google Calendar": "https://calendar.google.com/calendar/",
+			"Google Photos": "https://photos.google.com/",
 			"OneDrive": "https://onedrive.com",
 			"Temp Mail": "https://temp-mail.org/en"
 		}
