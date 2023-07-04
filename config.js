@@ -37,6 +37,7 @@ var cards = [
 			"Google Calendar": "https://calendar.google.com/calendar/",
 			"Google Photos": "https://photos.google.com/",
 			"OneDrive": "https://onedrive.com",
+			"SimpleLogin": "https://app.simplelogin.io/dashboard/",
 			"Temp Mail": "https://temp-mail.org/en"
 		}
 	},
@@ -65,9 +66,7 @@ var cards = [
 			"GitHub": "https://github.com",
 			"Google Maps": "https://www.google.se/maps",
 			"Kivra": "https://accounts.kivra.com/?locale=sv",
-			"Marks Kommun": "https://fs.mark.se/adfs/ls?version=1.0&action=signin&realm=urn%3AAppProxy%3Acom&appRealm=665f73f4-bff3-e611-80de-00155dc13b1a&returnUrl=https%3A%2F%2Fhome2.mark.se%2F&client-request-id=9162370E-1B41-0001-0A7C-6391411BD901",
-			"Marks Bostad": "https://www.marksbostadsab.se/",
-			"MB Marknad": "https://marknad.marksbostadsab.se/pgClientStart.aspx"
+			"Marks Kommun Login": "https://fs.mark.se/adfs/ls?version=1.0&action=signin&realm=urn%3AAppProxy%3Acom&appRealm=665f73f4-bff3-e611-80de-00155dc13b1a&returnUrl=https%3A%2F%2Fhome2.mark.se%2F&client-request-id=9162370E-1B41-0001-0A7C-6391411BD901"
 		}
 	}
 ]
