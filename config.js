@@ -22,6 +22,7 @@ var cards = [
 			"Last FM": "https://www.last.fm",
 			"D&D Beyond": "https://www.dndbeyond.com/characters",
 			"Foundry": "https://forge-vtt.com/game/webbysweirdandwigglytale",
+			"Nexus Mods": "https://www.nexusmods.com/",
 			"Garmin Connect": "https://connect.garmin.com/modern/",
 			"Strava": "https://www.strava.com/dashboard",
 			"Smashrun": "https://smashrun.com/miklam"
@@ -58,14 +59,15 @@ var cards = [
 	{
 		name: "Other",
 		bookmarks: {
-			"FOGIS": "https://fogis.svenskfotboll.se/Fogisdomarklient/Login/Login.aspx",
 			"Prisjakt": "https://www.prisjakt.nu/",
 			"Pricerunner": "https://www.pricerunner.se/",
 			"Blocket": "https://www.blocket.se/",
+			"Tradera: "https://www.tradera.com/",
 			"Inet": "https://www.inet.se/",
 			"GitHub": "https://github.com",
 			"Google Maps": "https://www.google.se/maps",
 			"Kivra": "https://accounts.kivra.com/?locale=sv",
+			"FOGIS": "https://fogis.svenskfotboll.se/Fogisdomarklient/Login/Login.aspx",
 			"Marks Kommun Login": "https://fs.mark.se/adfs/ls?version=1.0&action=signin&realm=urn%3AAppProxy%3Acom&appRealm=665f73f4-bff3-e611-80de-00155dc13b1a&returnUrl=https%3A%2F%2Fhome2.mark.se%2F&client-request-id=9162370E-1B41-0001-0A7C-6391411BD901"
 		}
 	}
