@@ -62,7 +62,7 @@ var cards = [
 			"Prisjakt": "https://www.prisjakt.nu/",
 			"Pricerunner": "https://www.pricerunner.se/",
 			"Blocket": "https://www.blocket.se/",
-			"Tradera: "https://www.tradera.com/",
+			"Tradera": "https://www.tradera.com/",
 			"Inet": "https://www.inet.se/",
 			"GitHub": "https://github.com",
 			"Google Maps": "https://www.google.se/maps",
