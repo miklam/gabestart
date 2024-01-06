@@ -19,10 +19,11 @@ var cards = [
 		bookmarks: {
 			"YouTube": "https://www.youtube.com/feed/subscriptions",
 			"Crunchyroll": "https://crunchyroll.com",
-			"Last FM": "https://www.last.fm",
+			"SVT Play": "https://www.svtplay.se/",
 			"D&D Beyond": "https://www.dndbeyond.com/characters",
 			"Foundry": "https://forge-vtt.com/game/webbysweirdandwigglytale",
 			"Nexus Mods": "https://www.nexusmods.com/",
+			"Last FM": "https://www.last.fm",
 			"Garmin Connect": "https://connect.garmin.com/modern/",
 			"Strava": "https://www.strava.com/dashboard",
 			"Smashrun": "https://smashrun.com/miklam"
@@ -46,8 +47,8 @@ var cards = [
 		name: "Money",
 		bookmarks: {
 			"Swedbank": "https://online.swedbank.se/app/ib/logga-in",
-			"Budget 2023": "https://docs.google.com/spreadsheets/d/1Yy_2coAWr0j4Jo187y_QttZgde9Jpc702wbvc_MossA/edit?usp=sharing",
-			"Budget Input 2023": "https://docs.google.com/forms/d/e/1FAIpQLSfmOptSVyokvc2ImOeTieQPpSdDPkl2HlL1cVCA58RfqambBA/viewform?usp=sf_link",
+			"Budget 2024": "https://docs.google.com/spreadsheets/d/1LMUwV3i2qi_9DdZtBGLJkSFduxE8T-2OWp-4sNEXk34/edit?usp=sharing",
+			"Budget Input 2024": "https://forms.gle/hbB1NUWxwhDua3WA8",
 			"PayPal": "https://www.paypal.com/se/home",
 			"Wise": "https://wise.com/",
 			"Länsförsäkringar": "https://www.lansforsakringar.se/alvsborg/privat/",
