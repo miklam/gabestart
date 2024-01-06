@@ -15,21 +15,21 @@
 /* Colors and other var*/
 :root {
   /* GLOBAL  COLORS  */
-  --bg: #eff1f5;
-  --fg: #cdd6f4;
+  --bg: #303446;
+  --fg: #c6d0f5;
 
   --secondaryBg: rgba(24, 24, 37, .85);
 
-  --black: #1e1e2e;
-  --blue: #89b4fa;
-  --cyan: #94e2d5;
-  --green: #a6e3a1;
-  --orange: #fab387;
-  --purple: #cba6f7;
-  --red: #f38ba8;
-  --white: #cdd6f4;
-  --yellow: #f9e2af;
-  --rosewater: #f5e0dc;
+  --black: #303446;
+  --blue: #8caaee;
+  --cyan: #81c8be;
+  --green: #a6d189;
+  --orange: #ef9f76;
+  --purple: #ca9ee6;
+  --red: #e78284;
+  --white: #c6d0f5;
+  --yellow: #e5c890;
+  --rosewater: #f2d5cf;
 
   --fontBody: "IBM Plex Mono", "Menlo", "DejaVu Sans Mono",
     "Bitstream Vera Sans Mono", Courier, monospace;
