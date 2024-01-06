@@ -15,10 +15,10 @@
 /* Colors and other var*/
 :root {
   /* GLOBAL  COLORS  */
-  --bg: #1c1b22;
+  --bg: #2b2a33;
   --fg: #c6d0f5;
 
-  --secondaryBg: #2b2a33;
+  --secondaryBg: #1c1b22;
 
   --black: #303446;
   --blue: #8caaee;
