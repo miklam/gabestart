@@ -694,7 +694,7 @@ span.info-connector {
   overflow: hidden;
   display: inline-flex;
   text-transform: lowercase;
-  color: var(--green);
+  color: var(--orange);
   padding: 0 0.5em;
   margin: 0 0.75em;
   font-weight: bold;
@@ -707,7 +707,7 @@ span.info-connector {
 #date-time,
 #time-date {
   color: var(--black);
-  background-color: var(--cyan);
+  background-color: var(--orange);
   padding: 0 0.5em;
   margin: 0 0.75em;
   font-weight: bold;
