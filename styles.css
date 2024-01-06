@@ -20,7 +20,7 @@
 
   --secondaryBg: #1c1b22;
 
-  --black: #303446;
+  --black: #1c1b22;
   --blue: #8caaee;
   --cyan: #81c8be;
   --green: #a6d189;
@@ -40,7 +40,7 @@
 
   /* PREFERRED ACCENT */
 
-  --accentColor: var(--rosewater);
+  --accentColor: var(--cyan);
 
   /* CUSTOM USERNAME COLORS */
 
