@@ -44,9 +44,9 @@
 
   /* CUSTOM USERNAME COLORS */
 
-  --usernameBg: var(--accentColor);
+  --usernameBg: var(--bg);
   /* In light mode is vice-versa */
-  --usernameFg: #1e1e2e;
+  --usernameFg: var(--accentColor);
 
   --bdradius: 0.75em;
 }
