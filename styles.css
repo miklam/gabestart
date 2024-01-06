@@ -40,13 +40,13 @@
 
   /* PREFERRED ACCENT */
 
-  --accentColor: var(--orange);
+  --accentColor: var(--cyan);
 
   /* CUSTOM USERNAME COLORS */
 
   --usernameBg: var(--bg);
   /* In light mode is vice-versa */
-  --usernameFg: var(--accentColor);
+  --usernameFg: var(--white);
 
   --bdradius: 0.75em;
 }
