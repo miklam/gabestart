@@ -40,7 +40,7 @@
 
   /* PREFERRED ACCENT */
 
-  --accentColor: var(--cyan);
+  --accentColor: var(--orange);
 
   /* CUSTOM USERNAME COLORS */
 
@@ -694,7 +694,7 @@ span.info-connector {
   overflow: hidden;
   display: inline-flex;
   text-transform: lowercase;
-  color: var(--rosewater);
+  color: var(--cyan);
   padding: 0 0.5em;
   margin: 0 0.75em;
   font-weight: bold;
@@ -706,7 +706,7 @@ span.info-connector {
 
 #date-time,
 #time-date {
-  color: var(--rosewater);
+  color: var(--cyan);
   background-color: var(--bg);
   padding: 0 0.5em;
   margin: 0 0.75em;
@@ -714,7 +714,7 @@ span.info-connector {
 }
 
 #dottime {
-  color: var(--black);
+  color: var(--cyan);
   animation-name: blink;
   animation-duration: 1s;
   animation-direction: linear;
