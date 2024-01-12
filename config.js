@@ -9,9 +9,9 @@ var cards = [
 			"Facebook": "https://facebook.com",
 			"Instagram": "https://instagram.com/?theme=dark",
 			"Reddit": "https://reddit.com",
-			"WhatsApp": "https://web.whatsapp.com",
 			"Facebook Messenger": "https://messenger.com",
-			"Google Messages": "https://messages.google.com/web/conversations"
+			"Google Messages": "https://messages.google.com/web/conversations",
+			"WhatsApp": "https://web.whatsapp.com"
 		}
 	},
 	{
@@ -69,7 +69,7 @@ var cards = [
 			"Google Maps": "https://www.google.se/maps",
 			"Kivra": "https://accounts.kivra.com/?locale=sv",
 			"FOGIS": "https://fogis.svenskfotboll.se/Fogisdomarklient/Login/Login.aspx",
-			"Marks Kommun Login": "https://fs.mark.se/adfs/ls?version=1.0&action=signin&realm=urn%3AAppProxy%3Acom&appRealm=665f73f4-bff3-e611-80de-00155dc13b1a&returnUrl=https%3A%2F%2Fhome2.mark.se%2F&client-request-id=9162370E-1B41-0001-0A7C-6391411BD901"
+			"Marks Kommun Login": "https://home2.mark.se/"
 		}
 	}
 ]
