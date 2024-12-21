@@ -24,6 +24,7 @@ var cards = [
 			"Foundry": "http://83.251.197.65:30000/auth",
 			"Nexus Mods": "https://www.nexusmods.com/",
 			"Last FM": "https://www.last.fm",
+			"The StoryGraph": "https://app.thestorygraph.com/",
 			"Garmin Connect": "https://connect.garmin.com/modern/",
 			"Strava": "https://www.strava.com/dashboard",
 			"Smashrun": "https://smashrun.com/miklam"
@@ -51,9 +52,9 @@ var cards = [
 			"Budget Input 2024": "https://forms.gle/hbB1NUWxwhDua3WA8",
 			"PayPal": "https://www.paypal.com/se/home",
 			"Wise": "https://wise.com/",
-			"Länsförsäkringar": "https://www.lansforsakringar.se/alvsborg/privat/",
+			"Folksam": "https://www.folksam.se/",
 			"Vattenfall": "https://www.vattenfall.se/",
-			"Bredband2": "https://www.bredband2.com/",
+			"Mediateknik": "https://mediateknik.net/",
 			"Försäkringskassan": "https://www.forsakringskassan.se/logga-in#/"
 		}
 	},
@@ -68,7 +69,6 @@ var cards = [
 			"GitHub": "https://github.com",
 			"Google Maps": "https://www.google.se/maps",
 			"Kivra": "https://accounts.kivra.com/?locale=sv",
-			"FOGIS": "https://fogis.svenskfotboll.se/Fogisdomarklient/Login/Login.aspx",
 			"Marks Kommun Login": "https://home2.mark.se/"
 		}
 	}
