@@ -48,8 +48,8 @@ var cards = [
 		name: "Money",
 		bookmarks: {
 			"Swedbank": "https://online.swedbank.se/app/ib/logga-in",
-			"Budget 2024": "https://docs.google.com/spreadsheets/d/1LMUwV3i2qi_9DdZtBGLJkSFduxE8T-2OWp-4sNEXk34/edit?usp=sharing",
-			"Budget Input 2024": "https://forms.gle/hbB1NUWxwhDua3WA8",
+			"Budget 2025": "https://docs.google.com/spreadsheets/d/1ysoJcr2J0Tx0bMlGVVw5fr_dCdHJiI5YBNpFZSsGIc8/edit?resourcekey=&gid=586151987#gid=586151987",
+			"Budget Input 2025": "https://forms.gle/8okiuta8zQXnFEAs5",
 			"PayPal": "https://www.paypal.com/se/home",
 			"Wise": "https://wise.com/",
 			"Folksam": "https://www.folksam.se/",
