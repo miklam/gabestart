@@ -54,7 +54,7 @@ var cards = [
 			"Wise": "https://wise.com/",
 			"Folksam": "https://www.folksam.se/",
 			"Vattenfall": "https://www.vattenfall.se/",
-			"Mediateknik": "https://mediateknik.net/",
+			"Mediateknik": "https://portal.mediateknik.net/authorization/index?username=&password=",
 			"Försäkringskassan": "https://www.forsakringskassan.se/logga-in#/"
 		}
 	},
