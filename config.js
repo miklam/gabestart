@@ -69,7 +69,9 @@ var cards = [
 			"GitHub": "https://github.com",
 			"Google Maps": "https://www.google.se/maps",
 			"Kivra": "https://accounts.kivra.com/?locale=sv",
-			"Marks Kommun Login": "https://home2.mark.se/"
+			"Marks Kommun Login": "https://home2.mark.se/",
+			"Vklass": "https://auth.vklass.se/",
+			"SchoolSoft": "https://sms.schoolsoft.se/letebo/jsp/Login.jsp"
 		}
 	}
 ]
